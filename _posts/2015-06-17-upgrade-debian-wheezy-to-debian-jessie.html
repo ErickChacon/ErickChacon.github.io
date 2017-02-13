@@ -1,0 +1,82 @@
+---
+layout: post
+title: Upgrade Debian Wheezy to Debian Jessie
+date: 2015-06-17 20:21:43.000000000 +01:00
+categories:
+- Debian
+- Linux
+tags:
+- LaTeX
+- Linux
+- Matlab
+- Software R
+---
+
+<p>In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package <code>lib6</code>. A reliable solution was to upgrade my system to <strong>Jessie</strong>, the current stable distribution of Debian. Its latest update, Debian 8.1, was released on 6th of June, 2015. </p>
+<p>For this reason, I share, in this post, the steps I followed for upgrading my system keeping user configuration and the main programs I use such as R, RStudio, Matlab, Mendeley, TeXstudio and others.</p>
+<p><strong>0) Backup your data:</strong> This is a logical initial step before starting any change on the system.</p>
+<p><strong>1) Upgrading to Debian Jessie:</strong></p>
+<p style="padding-left:0px;"><strong>1.1) Prepare Debian Wheezy to be upgrading:</strong> Be sure that your current system does not have any problem of dependency or wrong installed packages. You can use the following commands for that purpose:</p>
+
+{% highlight bash %}
+# Login like super user and write your password
+su -
+# Prepare your system
+aptitude update
+aptitude upgrade
+aptitude dist-upgrade
+{% endhighlight %}
+
+
+<p style="padding-left:0px;"><strong>1.2) Update the repositories list: </strong> Packages for Debian Jessie is downloaded from these repositories. One way to update this list is to modify the file <code>/etc/apt/sources.list</code>,  I use <code>gedit</code> for that:</p>
+{% highlight bash %}
+gedit /etc/apt/sources.list
+{% endhighlight %}
+<p style="padding-left:0px;">In my case, I put the following repositories:</p>
+
+{% highlight bash %}
+# Basic repositories
+deb http://ftp.uk.debian.org/debian/ jessie main
+deb-src http://ftp.uk.debian.org/debian/ jessie main
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+# Repositories for jessie-updates, previously known as 'volatile'
+deb http://ftp.uk.debian.org/debian/ jessie-updates main
+deb-src http://ftp.uk.debian.org/debian/ jessie-updates main
+# For wifi drivers
+deb http://http.debian.net/debian/ jessie main contrib non-free
+# For R backports: The mirror can be modified
+deb http://cran.ma.imperial.ac.uk/bin/linux/debian jessie-cran3/
+# For Flash Player
+deb http://ftp.us.debian.org/debian jessie contrib
+{% endhighlight %}
+
+<p style="padding-left:0px;">Another option is to change the wheezy word by jessie word automatically with the <code>sed</code> function.</p>
+{% highlight bash %}
+sed -i 's/wheezy/jessie/g' /etc/apt/sources.list
+{% endhighlight %}
+<p style="padding-left:0px;"><strong>1.3) Update the packages of Debian 8.1 Jessie</strong>.</p>
+{% highlight bash %}
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+{% endhighlight %}
+<p style="padding-left:0px;">During the upgrade it will ask if you want to restart manually or automatically some currently running services. It is suggested to make it manually. </p>
+<p style="padding-left:0px;">Furthermore, after upgrading the distribution, I had to choose the device where <code>grub</code> should be installed. If it this your case, you should select the <code>/dev/sda</code> device if your pc has only one disk (use <code>spacebar</code> to choose the device). Otherwise, use the following link http://askubuntu.com/questions/23418/what-do-i-select-for-grub-install-devices-after-an-update.</p>
+<p style="padding-left:0px;"><strong>1.5) Finally, reboot your computer to get the Debian Jessie system and enjoy. </strong></p>
+{% highlight bash %}
+reboot
+{% endhighlight %}
+<!-- <p><a href="https://statisticalissues.files.wordpress.com/2015/06/jessie.png"><img src="{{ site.baseurl }}/assets/jessie.png?w=662" alt="Debian Jessie" width="662" height="372" class="aligncenter size&#45;large wp&#45;image&#45;562" /></a></p> -->
+<img src="{{ site.baseurl }}/assets/jessie.png?w=662" alt="my dog eating a tangerine">
+<p><strong>2) Useful links to install programs:</strong></p>
+<p style="padding-left:0px;"><strong>2.1) Software R:</strong>
+<a href="http://cran.r-project.org/bin/linux/debian/">http://cran.r-project.org/bin/linux/debian/</a></p>
+<p style="padding-left:0px;"><strong>2.2) IDE Rstudio:</strong>
+<a href="http://cran.r-project.org/bin/linux/debian/">http://www.rstudio.com/ide/download/desktop</a></p>
+<p style="padding-left:0px;"><strong>2.3) Texstudio:</strong>
+<a href="http://cran.r-project.org/bin/linux/debian/">http://packages.debian.org/jessie/texstudio</a></p>
+<p style="padding-left:0px;"><strong>2.4) Mendeley Desktop (Gestor de bibliografías):</strong>
+<a href="http://cran.r-project.org/bin/linux/debian/">http://www.mendeley.com/</a></p>
+<p style="padding-left:0px;"><strong>2.5) Dropbox:</strong>
+<a href="http://cran.r-project.org/bin/linux/debian/">https://www.dropbox.com/</a></p>

@@ -2,10 +2,18 @@
 layout: default
 ---
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {
+  inlineMath: [['$','$'], ['\\(','\\)']],
+  displayMath: [ ['$$','$$'], ["\[","\]"] ],
+  }});
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
-  
+
   {{ content }}
 
   <ul class="post-list">

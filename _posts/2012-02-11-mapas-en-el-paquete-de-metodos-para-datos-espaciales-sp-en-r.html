@@ -1,0 +1,70 @@
+---
+layout: post
+title: Mapas en el paquete de "Métodos para datos espaciales" (sp) en R
+date: 2012-02-11 17:59:20.000000000 +00:00
+type: post
+published: true
+status: publish
+categories:
+- Software R
+tags:
+- mapa de lima
+- Software R
+meta:
+  _edit_last: '30108975'
+  publicize_results: a:2:{s:7:"twitter";a:1:{i:199127482;a:2:{s:7:"user_id";s:6:"eralfe";s:7:"post_id";s:18:"168469236241530881";}}s:2:"fb";a:1:{i:621816262;a:2:{s:7:"user_id";s:9:"621816262";s:7:"post_id";s:17:"10150533297311263";}}}
+  _wpas_done_twitter: '1'
+  _wpas_done_fb: '1'
+author:
+  login: eralstat
+  email: eral.th07@gmail.com
+  display_name: Erick Chacon Montalvan
+  first_name: ''
+  last_name: ''
+---
+<p style="text-align:justify;">Para trabajar con este paquete podemos descargar la información georeferenciada de http://gadm.org/ de cualquier país, lo malo es que a mayor nivel de detalle tal como distritos existen discrepancias con la realidad. De todas maneras este paquete resulta interesante y útil a la hora de trabajar con datos georeferenciados y mucho más si son datos propios. A continuación se muestra un código para obtener el mapa de Lima por provincias directo desde el Software R.</p>
+<p>[sourcecode language="r" collapse="true"]<br />
+library(sp)<br />
+peru &lt;- readRDS(&quot;PER_adm2.rds&quot;)<br />
+# Para descargar el mapa http://gadm.org/country<br />
+# En la misma página también se puede descargar para departamentos y provincias<br />
+# solo se cambia PER_adm2.RData por PER_adm0.RData,PER_adm1.RData o PER_adm3.RData<br />
+names(peru)<br />
+# Hasta ahora el mapa y sus características están cargados en gadm por provincias<br />
+mapalima &lt;- peru[peru@data$NAME_1 == &quot;Lima&quot;,] # Seleccionamos las provincias de lima (polígonos y datos) Aquí tu indicaste otros números pero la data ha cambiado y esos son los actuales que tienen las provincias de lima.<br />
+datalima &lt;- data.frame(mapalima) # Seleccionamos solo los datos de la provincias<br />
+# Los nombres de las provincias pueden ser obtenidas de 2 maneras:<br />
+datalima[7];mapalima$NAME_2;<br />
+#creamos el factor según los nombres de las provincias elegidas<br />
+mapalima$provincias &lt;- factor(mapalima$NAME_2)<br />
+#la función factor es para eliminar los niveles que no existen<br />
+col &lt;- rainbow(length(levels(mapalima$provincias ))) # asignamos los colores según los niveles<br />
+# mostramos el mapa<br />
+spplot(mapalima, &quot;provincias&quot;, col.regions = col, main = &quot;Lima Provincias&quot;)<br />
+# Además lo siguiente es por si se desea el mapa con texto (puede ser en vectores)<br />
+d1 &lt;- list(&quot;sp.text&quot;,c(-75.99853,-11.),&quot;Estadística&quot;)<br />
+spplot(<br />
+  mapalima, &quot;provincias&quot;, col.regions = col, main = &quot;Lima Provincias&quot;,sp.layout =<br />
+    list(d1)<br />
+)<br />
+[/sourcecode]</p>
+<p style="text-align:justify;">El resultado del mapa es el siguiente (Por supuesto que puede ser mejorado según sus intereses):</p>
+<p style="text-align:justify;"><a href="http://statisticalissues.files.wordpress.com/2012/02/rplot.jpeg"><img class="aligncenter size-medium wp-image-144" title="Mapa de Lima por provincias" src="{{ site.baseurl }}/assets/rplot.jpeg?w=300" alt="Hecho en R con el paquete sp" width="300" height="245" /></a></p>
+<p style="text-align:justify;">Por otro lado, también se muestra ,a continuación, el código para obtener los distritos del departamento de Lima:</p>
+<p>[sourcecode language="r" collapse="true"]<br />
+library(sp)<br />
+#descargamos los datos por distritos<br />
+gadm &lt;- readRDS(&quot;PER_adm3.rds&quot;)</p>
+<p>names(gadm)<br />
+# elegimos solo los distritos de lima<br />
+mapalima &lt;- gadm[(gadm@data$NAME_2  == &quot;Lima&quot;) |<br />
+                  gadm@data$NAME_3  == &quot;Callao&quot; | gadm@data$NAME_3  == &quot;Ventanilla&quot;,]<br />
+dataprovlima &lt;- data.frame(mapalima)<br />
+limageo &lt;- mapalima[1]</p>
+<p>distritos &lt;- factor(mapalima$NAME_3) #la función factor es para eliminar los niveles que no existen<br />
+mapalima$distritos &lt;- distritos# asignamos el factor</p>
+<p>col &lt;- rainbow(length(levels(mapalima$distritos))) # asignamos los colores según los niveles<br />
+# mostramos el mapa</p>
+<p>spplot(mapalima, &quot;distritos&quot;, col.regions = col, main = &quot;Distritos del Departamento de Lima&quot;)<br />
+[/sourcecode]</p>
+<p style="text-align:justify;">Espero que les sea útil =).</p>
