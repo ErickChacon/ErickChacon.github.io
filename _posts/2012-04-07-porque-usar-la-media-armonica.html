@@ -12,30 +12,18 @@ tags:
 - Estadística Descriptivo
 - Estadística Inferencial
 - promedio
-meta:
-  _edit_last: '30108975'
-  publicize_results: a:2:{s:7:"twitter";a:1:{i:199127482;a:2:{s:7:"user_id";s:6:"eralfe";s:7:"post_id";s:18:"188807341901234177";}}s:2:"fb";a:1:{i:621816262;a:2:{s:7:"user_id";s:9:"621816262";s:7:"post_id";s:17:"10150764310376263";}}}
-  _wpas_done_twitter: '1'
-  _wpas_done_fb: '1'
-  _wpas_skip_facebook: '1'
-author:
-  login: eralstat
-  email: eral.th07@gmail.com
-  display_name: Erick Chacon Montalvan
-  first_name: ''
-  last_name: ''
 ---
 <p style="text-align:justify;">Recuerdo cuando llevé la clase de Estadística Descriptiva, y también la de Inferencia Paramétrica, nos presentaron estadísticos descriptivos como el promedio aritmético, geométrico y armónico. En ese instante no tenía ni la mas vaga idea de cuando utilizar el promedio armónico ya que al parecer, no podía interpretar, aquella fórmula, de una manera más comprensible o que de pistas de una interpretación clara tal como lo es el promedio aritmético. Cuento esto, porque me imagino que muchos se sienten identificados y por ello quiero compartir un ejemplo que hace un tiempo atrás revisé, espero que resulte de su interés. Es el siguiente:</p>
-<p style="text-align:justify;">Imagine que se esta estudiando la velocidad promedio de los vehículos en una vía definida, de la cual se tiene conocimiento de su longitud o distancia $latex distancia = d$. Ahora, se sabe que para estudiar este parámetro o estimarlo, se necesita un número de vehículos que realicen el recorrido por la vía bajo condiciones semejantes $latex t(muestra) = n$ de manera que:</p>
-<p>$latex \overline{v} = \frac{\overline{d}}{\overline{t}}= \frac{\displaystyle\sum\limits_{i=1}^n \frac{d_i}{n}}{\overline{t}}$</p>
-<p>En donde $latex d_i$ es la distancia recorrida por el i-ésimo vehículo. Pero para nuestro caso, como las medidas son tomadas en una misma longitud de vía, $latex d_1=d_2=...=d_n = d$. De tal manera que la ecuación queda reducida a:</p>
-<p>$latex \overline{v} = \frac{d}{\overline{t}}= \frac{d}{\displaystyle\sum\limits_{i=1}^n \frac{t_i}{n}}= \frac{nd}{\displaystyle\sum\limits_{i=1}^n t_i}$</p>
-<p>$latex \overline{v} = \frac{nd}{\displaystyle\sum\limits_{i=1}^n t_i} ...(1)$</p>
+<p style="text-align:justify;">Imagine que se esta estudiando la velocidad promedio de los vehículos en una vía definida, de la cual se tiene conocimiento de su longitud o distancia $distancia = d$. Ahora, se sabe que para estudiar este parámetro o estimarlo, se necesita un número de vehículos que realicen el recorrido por la vía bajo condiciones semejantes $t(muestra) = n$ de manera que:</p>
+<p>$\overline{v} = \frac{\overline{d}}{\overline{t}}= \frac{\displaystyle\sum\limits_{i=1}^n \frac{d_i}{n}}{\overline{t}}$</p>
+<p>En donde $d_i$ es la distancia recorrida por el i-ésimo vehículo. Pero para nuestro caso, como las medidas son tomadas en una misma longitud de vía, $d_1=d_2=...=d_n = d$. De tal manera que la ecuación queda reducida a:</p>
+<p>$\overline{v} = \frac{d}{\overline{t}}= \frac{d}{\displaystyle\sum\limits_{i=1}^n \frac{t_i}{n}}= \frac{nd}{\displaystyle\sum\limits_{i=1}^n t_i}$</p>
+<p>$\overline{v} = \frac{nd}{\displaystyle\sum\limits_{i=1}^n t_i} ...(1)$</p>
 <p>Además recuerde que:<br />
-$latex t_i= \frac{d_i}{v_i}=\frac{d}{v_i} ...(2)$</p>
-<p>En donde $latex t_i$ es el tiempo de recorrido de cada vehículo y $latex v_i$ es la velocidad promedio de cada vehículo .</p>
+$t_i= \frac{d_i}{v_i}=\frac{d}{v_i} ...(2)$</p>
+<p>En donde $t_i$ es el tiempo de recorrido de cada vehículo y $v_i$ es la velocidad promedio de cada vehículo .</p>
 <p>Ahora reemplazando (2) en (1).</p>
-<p>$latex \overline{v} = \frac{nd}{\displaystyle\sum\limits_{i=1}^n \frac{d}{v_i}}$</p>
+<p>$\overline{v} = \frac{nd}{\displaystyle\sum\limits_{i=1}^n \frac{d}{v_i}}$</p>
 <p>La constante d se elimina y obtenemos:</p>
-<p>$latex \overline{v} = \frac{n}{\displaystyle\sum\limits_{i=1}^n \frac{1}{v_i}}$</p>
+<p>$\overline{v} = \frac{n}{\displaystyle\sum\limits_{i=1}^n \frac{1}{v_i}}$</p>
 <p>lo cual viene a ser el promedio armónico. Conocido como velocidad-promedio espacio en la Simulación de Tráfico.</p>

@@ -9,44 +9,32 @@ categories:
 - Estadística Inferencial
 tags:
 - Estadística Inferencial
-meta:
-  _edit_last: '30108975'
-  publicize_results: a:1:{s:2:"fb";a:1:{i:621816262;a:2:{s:7:"user_id";s:9:"621816262";s:7:"post_id";s:17:"10150432724716263";}}}
-  _wpas_done_fb: '1'
-  _wpas_skip_twitter: '1'
-author:
-  login: eralstat
-  email: eral.th07@gmail.com
-  display_name: Erick Chacon Montalvan
-  first_name: ''
-  last_name: ''
 ---
-<p style="text-align:justify;">El siguiente código en el software R nos brinda una forma sencilla para comprobar el teorema del límite central, explícitamente para verificar la distribución muestral de la media muestral. Como puede ver tiene distintas opciones de escoger la distribución, sin necesidad de asumir la normalidad, pero las variables $latex x_i$ si deben ser independientes e identicamente distribuidas. Los resultados son asombrosos para quien nunca hizo la prueba bajo simulación ya que, incluso bajo la distribución poblacional más sesgada, no se rechaza que  la media muestral (promedio) se distribuya como una distribución normal con un nivel de significancia $latex =0.05$ .</p>
-<p>[sourcecode language="r" collapse="true"]<br />
-# http://www.stat.ucl.ac.be/ISdidactique/Rhelp/library/nortest/html/00Index.html<br />
-# el link anterior es para pruebas de normalidad<br />
-install.packages(&quot;nortest&quot;)<br />
-library(&quot;nortest&quot;)</p>
-<p>N=500<br />
-n=30<br />
-#x=rnorm(N,0,1000)<br />
-#x=rpois(N, lambda=3)<br />
-#x=rbinom(N, 20, .2)<br />
-#x=rgamma(N, shape=50/2, rate = 1, scale = 2) # chi cuadrado con k=5<br />
-x=rgamma(N, shape=1, rate = 1, scale = 2) # gamma se rechaza<br />
-#x=rgamma(N, shape=1, rate = 1, scale = 5) # exponencial con media 5 se rechaza<br />
-#x=runif(N)<br />
-#x=rweibull(n=200,shape=2.1,scale=1.1)<br />
-mex=c()<br />
-w=0<br />
-for (i in 1:1000){<br />
-mex[i]=mean(sample(x,n,replace=FALSE))<br />
-#setdiff() para comparar dos muestras podria implementarse un codigo para que no se repitan las muestras<br />
-#aunque primero tendria que ordenarse las muestra para aplicar esta función<br />
-}<br />
-layout(matrix(1:2,1,2))<br />
-layout.show(2)<br />
-hist(x,main=&quot;Histograma de la población&quot;)<br />
-hist(mex,main=&quot;Histograma del promedio&quot;)<br />
-lillie.test(mex) # prueba de kolgomorov<br />
-[/sourcecode]</p>
+<p style="text-align:justify;">El siguiente código en el software R nos brinda una forma sencilla para comprobar el teorema del límite central, explícitamente para verificar la distribución muestral de la media muestral. Como puede ver tiene distintas opciones de escoger la distribución, sin necesidad de asumir la normalidad, pero las variables $x_i$ si deben ser independientes e identicamente distribuidas. Los resultados son asombrosos para quien nunca hizo la prueba bajo simulación ya que, incluso bajo la distribución poblacional más sesgada, no se rechaza que  la media muestral (promedio) se distribuya como una distribución normal con un nivel de significancia $0.05$ .</p>
+{% highlight R %}
+# http://www.stat.ucl.ac.be/ISdidactique/Rhelp/library/nortest/html/00Index.html
+# el link anterior es para pruebas de normalidad
+install.packages(nortest)
+library(nortest)
+n = 30
+#x=rnorm(N,0,1000)
+#x=rpois(N, lambda=3)
+#x=rbinom(N, 20, .2)
+#x=rgamma(N, shape=50/2, rate = 1, scale = 2) # chi cuadrado con k=5
+x=rgamma(N, shape=1, rate = 1, scale = 2) # gamma se rechaza
+#x=rgamma(N, shape=1, rate = 1, scale = 5) # exponencial con media 5 se rechaza
+#x=runif(N)
+#x=rweibull(n=200,shape=2.1,scale=1.1)
+mex = c()
+w = 0
+for (i in 1:1000){
+  mex[i] = mean(sample(x, n, replace = FALSE))
+#setdiff() para comparar dos muestras podria implementarse un codigo para que no se repitan las muestras
+#aunque primero tendria que ordenarse las muestra para aplicar esta función
+}
+layout(matrix(1:2,1,2))
+layout.show(2)
+hist(x,main = "Histograma de la población")
+hist(mex,main=Histograma del promedio)
+lillie.test(mex) # prueba de kolgomorov
+{% endhighlight %}
