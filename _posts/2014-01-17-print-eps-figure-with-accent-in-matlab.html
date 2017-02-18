@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Print eps figure with accent in matlab
 date: 2014-01-17 23:27:23.000000000 +00:00
 type: post
@@ -78,5 +77,5 @@ title('L\''INEA COSTERA DE PER\''U','FontSize',14,'interpreter','LaTex')
 print -depsc prueba
 {% endhighlight %}
 
-<p><a href="http://statisticalissues.files.wordpress.com/2014/01/perucoastline.png"><img src="{{ site.baseurl }}/assets/perucoastline.png" alt="Coastline of Peru" width="640" height="323" class="aligncenter size-full wp-image-481" /></a></p>
+<p><a href="http://statisticalissues.files.wordpress.com/2014/01/perucoastline.png"><img src="{{ site.baseurl }}/assets/images/perucoastline.png" alt="Coastline of Peru" width="640" height="323" class="aligncenter size-full wp-image-481" /></a></p>
 <p style="text-align:justify;">Left image was made without using latex interpreter and right image was developed with the option LaTex interpreter. As you can see, the principal key is to add the option <code>('interpreter','Latex')</code> to text functions as <code>title()</code>, <code>xlabel()</code>, <code> ylabel()</code>, <code> text()</code>, <code>textm()</code>,and others. The image above is not the real resolution printed with matlab becouse I had to convert it to .png format in order to upload it to this post.</p>

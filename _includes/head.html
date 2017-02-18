@@ -1,26 +1,19 @@
-<head>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {
-  inlineMath: [['$','$'], ['\\(','\\)']],
-  displayMath: [ ['$$','$$'], ["\[","\]"] ],
-  }});
+<meta charset="utf-8">
+
+{% include seo.html %}
+
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
 
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <!-- my css -->
-  <link rel="stylesheet" href="{{ "/assets/extra.css" | relative_url }}">
-  <!-- end my css -->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-  {% endif %}
-</head>
+<meta http-equiv="cleartype" content="on">
