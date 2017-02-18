@@ -108,6 +108,8 @@ author:
   youtube          :
 
 
+theme: minimal-mistakes-jekyll
+
 # Reading Files
 include:
   - .htaccess
