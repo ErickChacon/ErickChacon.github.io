@@ -20,6 +20,8 @@ foo:
 
 # main links links
 main:
+  # - title: "Programming Notes"
+  #   url: /program/cpp/01-program-structure/
   # - title: "Quick-Start Guide"
   #   url: /docs/quick-start-guide/
   # - title: "About"
@@ -31,6 +33,15 @@ main:
   # - title: "Terms &amp; Privacy Policy"
     # url: /terms/
 
+# programming links
+program:
+  - title: C++
+    children:
+      - title: "Introduction to C++"
+  - title: R
+    children:
+      - title: "Introduction to R"
+      - title: "Objects"
 
 # documentation links
 docs:
