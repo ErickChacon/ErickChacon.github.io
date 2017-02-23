@@ -22,6 +22,9 @@ foo:
 main:
   # - title: "Programming Notes"
   #   url: /program/cpp/01-program-structure/
+  #   children:
+  #     - title: "C++"
+  #     - title: "R"
   # - title: "Quick-Start Guide"
   #   url: /docs/quick-start-guide/
   # - title: "About"
