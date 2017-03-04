@@ -20,8 +20,11 @@ foo:
 
 # main links links
 main:
-  # - title: "Programming Notes"
-  #   url: /program/cpp/01-program-structure/
+  - title: "Modelling"
+  - title: "Programming"
+    url: /program/cpp/01-program-structure/
+  - title: "Tutorials"
+  - title: "Favorite Tools"
   #   children:
   #     - title: "C++"
   #     - title: "R"
