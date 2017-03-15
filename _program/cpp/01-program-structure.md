@@ -116,6 +116,26 @@ bool |1 | none | true or false
 enum | varies | none | dependant on the enclosed data types
 
 ## Variables and Constants
+**Variables** are named memory locations. When creating them, you must provide the data type. Case sensitives, start always with a letter or underscore. Customized types can be also created.
+
+```cpp
+int myVar = 0;
+int youVar{1};
+```
+
+Be careful when assigning different data types than the defined for certain variable (assigning decimal to integer data type), because information can be lost.
+
+**Constants** are named memory location, but their values can not be changed. They are created with `const`, and the value should be assigned when it is created.
+
+**Explicit Type Conversion**
+Using the type cast statement and cast operator `static_cast`.
+
+```cpp
+long myLong = (long)myInt;
+long myLong = long(myInt);
+char ch = static_cast<char>(i);   // int to char
+double dbl = static_cast<double>(f);   // float to double
+```
 
 ## Complex Data Types
 
