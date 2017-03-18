@@ -116,6 +116,7 @@ bool |1 | none | true or false
 enum | varies | none | dependant on the enclosed data types
 
 ## Variables and Constants
+
 **Variables** are named memory locations. When creating them, you must provide the data type. Case sensitives, start always with a letter or underscore. Customized types can be also created.
 
 ```cpp
@@ -135,7 +136,38 @@ long myLong = (long)myInt;
 long myLong = long(myInt);
 char ch = static_cast<char>(i);   // int to char
 double dbl = static_cast<double>(f);   // float to double
+auto i = 3.0/2;
 ```
 
 ## Complex Data Types
+
+Compound data types store more than on piece of data or more than one data type. 
+
+### Arrays
+
+An array is collection of elements of the same type. An array of one, two and three dimension is a list, table and cube respectively. It has the following features:
+
+- Every element contains a value.
+- Indexation starts from 0.
+- Its size is the number of elements.
+- Single or multi-dimensional.
+- Its rank is the dimension of the array.
+
+The code below shows how to initialize, access and iterate through an array.
+
+```cpp
+//Initialize
+int arrayName[10];
+int arrayName[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // with values
+int arrayName[10] = {1, 2, 3};// only some values, otherwise 0
+//Accesing
+int number = arrayName[2]; // value 3
+//Iterating Over an Array
+for (int i = 0; i < 5; i++)
+{
+     int number = arrayName[i];
+     ...
+}
+```
+
 
