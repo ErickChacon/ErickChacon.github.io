@@ -5,13 +5,14 @@ date: 2017-02-17 20:21:43.000000000 +01:00
 
 As an statistician and software developer enthusiast, I believe that C++ is an excellent tool to boost your code in your preferred language for data analysis like R, python or Julia. Anyway, there are several reason why C++ is so useful, so I will share some notes for learning C++, based on the course called [Introduction to C++ on edX](https://www.edx.org/course/introduction-c-microsoft-dev210x-2).
 <!-- Check the following link for more information about multi-software packages develop. -->
+
 ## What is c++?
 
 C++ programming language was created by [Bjarne Stroustrup](http://www.stroustrup.com/C++.html), who defines C++ as a general purpose programming language with a bias towards systems programming that
 - is a better C
 - supports data abstraction
 - supports object-oriented programming
-- supports generic programming. 
+- supports generic programming.
 
 ## Basic Program Structure of C++ Code
 
@@ -72,16 +73,16 @@ C++ is case sensitive.
 
 Name | Bytes | Alias | Approximate Range
 :-|:-|:-|:-
-int | 4 | signed | $-2$ x $10 ^ 9$ to $2$ x $10 ^ 9$
-unsigned int | 4 | unsigned | $0$ to $4$ x $10 ^ 9$
-\__int8 | 1 | char | $-128$ to $127$
-unsigned \__int8 | 1 | unsigned char | $0$ to $255$
-\__int16 |2 | short, short int, signed short int | $–32,768$ to $32,767$
-unsigned \__int16  | 2  | unsigned short, unsigned short int  | $0$ to $65,535$
-\__int32 | 4 | signed, signed int, int | $-2$ x $10 ^ 9$ to $2$ x $10 ^ 9$
-unsigned \__int32 | 4 | unsigned, unsigned int | $0$ to $4$ x $10 ^ 9$ 
-\__int64 | 8 | long long, signed long long | $-9$ x $10 ^ {18}$ to $9$ x $10 ^ {18}$
-unsigned \__int64 | 8 | unsigned long long | $0$ to ${18}$ x $10 ^ {18}$
+int | 4 | signed | $-2$ x $10^9$ to $2$ x $10^9$
+unsigned int | 4 | unsigned | $0$ to $4$ x $10^9$
+\_\_int8 | 1 | char | $-128$ to $127$
+unsigned \_\_int8 | 1 | unsigned char | $0$ to $255$
+\_\_int16 |2 | short, short int, signed short int | $–32,768$ to $32,767$
+unsigned \_\_int16  | 2  | unsigned short, unsigned short int  | $0$ to $65,535$
+\_\_int32 | 4 | signed, signed int, int | $-2$ x $10 ^ 9$ to $2$ x $10 ^ 9$
+unsigned \_\_int32 | 4 | unsigned, unsigned int | $0$ to $4$ x $10 ^ 9$
+\_\_int64 | 8 | long long, signed long long | $-9$ x $10^{18}$ to $9$ x $10^{18}$
+unsigned \_\_int64 | 8 | unsigned long long | $0$ to $18$ x $10^{18}$
 short | 2 | short int, signed short int | $–32,768$ to $32,767$
 unsigned short | 2 | unsigned short int | $0$ to $65,535$
 long | 4 | long int, signed long int | $-2$ x $10 ^ 9$ to $2$ x $10 ^ 9$
@@ -97,16 +98,15 @@ Note: 3.4E +/- 38 (7 digits) means that:
 - the largest positive value es $3.4$ x $10^{38}$,
 - only 7 significant decimal digits can be represented.
 - Similarly for the smallest and largest negative value.
-- The type names that start with a __ character are considered non-standard types.
+- The type names that start with a `__` character are considered non-standard types.
 
 ### Character Data
-
 Name | Bytes | Alias | Approximate Range
 :-|:-|:-|:-
 char | 1 | none | -128 to 127 or 0 to 255
 signed char | 1 | none | -128 to 127
 unsigned char | 1 | none | 0 to 255
-wchar*_t | 2 or 4 | \__wchar_t | 0 to $65\times 10^3$ or $4\times 10^9$
+wchar\*\_t | 2 or 4 | \_\_wchar\_t | 0 to $65\times 10^3$ or $4\times 10^9$
 
 ### Other Data
 
@@ -141,7 +141,7 @@ auto i = 3.0/2;
 
 ## Complex Data Types
 
-Compound data types store more than on piece of data or more than one data type. 
+Compound data types store more than on piece of data or more than one data type.
 
 ### Arrays
 
