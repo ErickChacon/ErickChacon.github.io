@@ -105,10 +105,6 @@ Note: 3.4E +/- 38 (7 digits) means that:
 Name | Bytes | Alias | Approximate Range
 :-|:-|:-|:-
 char | 1 | none | -128 to 127 or 0 to 255
-
-Name | Bytes | Alias | Approximate Range
-:-|:-|:-|:-
-char | 1 | none | -128 to 127 or 0 to 255
 signed char | 1 | none | -128 to 127
 unsigned char | 1 | none | 0 to 255
 wchar*\_t | 2 or 4 | \_\_wchar\_t | 0 to $65\times 10^3$ or $4\times 10^9$
