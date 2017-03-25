@@ -101,6 +101,7 @@ Note: 3.4E +/- 38 (7 digits) means that:
 - The type names that start with a `__` character are considered non-standard types.
 
 ### Character Data
+
 Name | Bytes | Alias | Approximate Range
 :-|:-|:-|:-
 char | 1 | none | -128 to 127 or 0 to 255
