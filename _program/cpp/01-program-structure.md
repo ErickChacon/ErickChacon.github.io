@@ -30,9 +30,11 @@ int main()
 
 - Line 1: Pre-processor directive, locates the code for `iostream` library.
 - Line 3: `main` method is required for any C++ program, it is the starting point of any application. `int` indicates that the output will be an integer.
-- Line 4 and 6: Indicates the beginning and end of the `main` method body.
+- Line 4 and 7: Indicates the beginning and end of the `main` method body.
 - Line 5: `cout` is a method that prints "Hello World" and it is found, `::`, in the `std` namespace.
 - Line 7: Returns 0 if everything executes fine inside the body of `main` method.
+
+<!-- namespace indicates where to look for an object or function. They are not neccesarily related. A header file called with `include` add files to your project, in particular libraries are integrated while namespaces do not need to. -->
 
 ## Compilation and Code Formatting
 
@@ -118,7 +120,7 @@ enum | varies | none | dependant on the enclosed data types
 
 ## Variables and Constants
 
-**Variables** are named memory locations. When creating them, you must provide the data type. Case sensitives, start always with a letter or underscore. Customized types can be also created.
+**Variables** are named memory locations. When creating them, you must provide the data type. Case sensitives, start always with a letter or underscore. Customized types can be also created. $x^2$
 
 ```cpp
 int myVar = 0;
@@ -170,5 +172,98 @@ for (int i = 0; i < 5; i++)
      ...
 }
 ```
+
+### Strings
+
+Last character is a null character string `\0`.
+
+```cpp
+// Basic way with character array.
+char myString[5] = {'c', 'h', 'a', 'r', '\0'}
+cout << myString << endl;
+// Create and initialize.
+char isAString[6] = "Hello";
+char isAString = "Hello"; // not necessary to add the length
+// With string class.
+std::string myNewString = "More easy!";
+```
+
+### Structures
+
+Arrays can only store data of the same type.
+
+```cpp
+// Declare a new structure called user.
+struct user
+{
+     string name;
+     string country;
+     int age;
+};
+// Create an object user with initial values.
+user newUser = {"David", "Peru", 13};
+// Create an object without initial values.
+user unkUser;
+unkUser.name = "David";
+unkUser.country = "Peru";
+unkUser.age = 13;
+std::cout << "User " + newUser.name + " is from " + newUser.country + " and " + newUser.age + " years old."
+```
+
+### Unions
+
+Similar to structures, but can only store one piece of data at a time.
+
+```cpp
+union numericUnion
+{
+     int intValue;
+     long longValue;
+};
+numericUnion myUnion;
+myUnion.intValue = 3;
+cout << myUnion.intValue << endl;
+myUnion.longValue = 4.5;
+cout << myUnion.longValue << endl;
+cout << myUnion.intValue; cout << endl; // 0 because just one field is stored.
+```
+
+### Enumerations
+
+Create symbolic constants. Common case for day of the week.
+
+```cpp
+enum Day {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
+// Notice that it starts from 0, but you can specify the starting value.
+enum Day {Sunday = 2, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
+Day payDay;
+payDay = Thursday;
+cout << payDay << endl; // shows 6, because internally they are numbers.
+```
+
+## C++ Operators
+
+Operator      | Description
+:-            | :-
+`+`           | addition
+`-`           | subtraction
+`*`           | multiplication
+`/`           | division
+`%`           | modulo
+`+= (y += x)` | same as y = y + x
+`-= (y -= x)` | same as y = y - x
+`*= (y *= x)` | same as y = y * x
+`++`          | increment by 1
+`--`          | decrement by 1
+`==`          | equal to
+`!=`          | not equal to
+`>`           | greater than
+`<`           | less than
+`>=`          | greater than or equal to
+`<=`          | less than or equal to
+`&&`          | logical AND
+`||` | logical OR
+`!`           | logical NOT
+
 
 
