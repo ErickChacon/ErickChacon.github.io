@@ -241,6 +241,8 @@ payDay = Thursday;
 cout << payDay << endl; // shows 6, because internally they are numbers.
 ```
 
+# Control Statements
+
 ## C++ Operators
 
 Operator      | Description
@@ -264,6 +266,170 @@ Operator      | Description
 `&&`          | logical AND
 `||` | logical OR
 `!`           | logical NOT
+
+## Decision Statements
+
+Uses conditional to set the behaviour of the program.
+
+### `if` statement
+
+```cpp
+char response = 'y';
+if (response == 'y' || response == 'Y')
+{
+    cout << "Positive response received" << endl;
+} // if there is no curly braces, only execute the first next line.
+```
+
+### `if else` statement
+
+```cpp
+string response;
+if (response == "connection_failed")
+{
+    // Block of code executes if the value of the response variable is "connection_failed".
+}
+else
+{
+    // Block of code executes if the value of the response variable is not "connection_failed".
+}
+```
+
+### `else if` statement
+
+```cpp
+string response;
+if (response == "connection_failed")
+{
+    // Block of code executes if the value of the response variable is "connection_failed".
+}
+else if (response == "connection_error")
+{
+    // Block of code executes if the value of the response variable is "connection_error".
+}
+else
+{
+    // Block of code executes if the value of the response variable is neither above responses.
+}
+```
+
+### `switch` statement
+
+Includes a `default` category when no other case is matched. `C++` supports `int`, `char` or `enumerations` for case option.
+
+```cpp
+char response = 'y';
+switch (response)
+{
+   case 'y':
+      // Block of code executes if the value of response is y.
+      break;
+   case 'Y':
+      // Block of code executes if the value of response is Y.
+      break;
+   case 'n':
+      // Block of code executes if the value of response is n.
+      break;
+   default:
+      // Block executes if none of the above conditions are met.
+      break;
+}
+```
+
+### The conditional operator
+
+Similar to `if else` operator but more compactly using three operands. The first operand evaluate the condition, the second operand is evaluated if the condition is hold; otherwise, the third operand is evaluated.
+
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+     int i = 1, j = 2;
+     cout << ( i > j ? i : j ) << " is greater." << endl;
+}
+```
+
+## Repetition statements
+
+Repetition through the use of loops.
+
+### `for` loop
+
+Three main attributes that are separated by a semicolon. The first attribute indicates how to get started; the second, when to continue the loop and the last one, how to move on. This third attribute is executed at the end of each iteration.
+
+```cpp
+for ([initializer(s)]; [condition]; [iterator])
+{
+   // code to repeat goes here
+}
+```
+
+```cpp
+for (int i = 0 ; i < 10; i++)
+{
+  std::cout << i << endl;
+}
+```
+
+### `while` loop
+
+Executes the code while a certain condition is hold. Only includes the condition as an attribute; is up to you how to initialize and when the loop finishes.
+
+```cpp
+string response;
+cout << "Enter menu choice " << endl << "More" << endl << "Quit" << endl;
+cin >> response;
+
+    while (response != "Quit")
+    {
+        // Code to execute if Quit is not entered
+
+        // Prompt user again with menu choices until Quit is entered
+        cout << "Enter menu choice " << endl << "More" << endl << "Quit" << endl;
+        cin >> response;
+    }
+```
+
+### `do` loop
+
+Similar to a `while` loop, but the `do` loop will always execute the block of code at least once.
+
+```cpp
+string response; // response should be defined outside the loop
+
+do
+{
+     cout << "Enter menu choice " << endl << "More" << endl << "Quit" << endl;
+     cin >> response;
+
+     // Process the data.
+
+} while (response != "Quit"); // this semicolon is required
+```
+
+# Functions and Objects
+
+## Introduction to Functions
+
+A function is basically a bock of code with a given name. It can be called in order to execute the block of code inside this function. It could accept arguments and may return a certain value when it is executed.
+
+
+```cpp
+int Sum(int x, int y)
+{
+     return x + y;
+}
+```
+
+A function can also be overloaded, which means that you can define another function with the same name and different number or arguments. Then, the compiler will call the function according to the number of arguments.
+
+Usually, when defining a function (function prototype) you have to specify its
+
+- storage class,
+- return type,
+- name,
+- parameters.
 
 
 
