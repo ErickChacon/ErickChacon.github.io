@@ -431,5 +431,155 @@ Usually, when defining a function (function prototype) you have to specify its
 - name,
 - parameters.
 
+### Function Parameters
+
+A function can accept values, through the parameters, that will be used in the block code inside the function. Those values are called arguments. The next function have two parameters `a` and `b` of type `int`.
+
+```cpp
+int Sum(int a, int b)
+{
+     return a + b;
+}
+```
+
+The function can be called as follows:
+
+```cpp
+int result = Sum(2, 3);
+```
+
+### Inline Functions
+
+Inline functions avoid the overhead associated with traditional function calls.
+
+```cpp
+inline void swap(int & a, int & b)
+{
+  int temp = a;
+  a = b;
+  b = temp;
+}
+```
+
+```cpp
+// Traditional method that results in a function call
+swap(5, 6);
+
+// Using an inline function call, the compiler converts the previous line to
+int temp = a;
+a = b;
+b = temp;
+```
+
+Inline functions are suggested only for small functions that are used frequently.
+
+### Storage Classes and Scope
+
+```cpp
+#include <iostream>
+int main()
+{
+    int total = 0;
+    for(int i = 1; i <= 10; i++)
+    {
+         total += i;
+    }
+    std::cout << "The sum of the numbers 1 to 10 is " << total << std::endl;
+   std::cout << "Current value of i is " << i << std::cout;
+   // The code at line 10 will result in an error in C++ that indicates the variable is undefined.
+return 0;
+}
+```
+
+Usually you write your function on a `.cpp` file, and declare the signature on the main `.cpp` file. It is more useful to declare the signature on a header file and then use `# include` to use those signatures in any file.
+
+## Objects
+
+### Classes
+
+Classes allow you to create you own data type. They can be seen as blueprint of the type of object you cant to define. Methods and fields can be defined for a class.
+
+```cpp
+//Declaring a Class
+class Rectangle
+{
+public:
+    int _width;
+    int _height;
+}; // necessary semicolon
+```
+
+A rectangle class with two public (accessible) variables to represent the width and height of the rectangle.
+
+### Initialize
+
+Instances of a rectangle can be created.
+
+```cpp
+void main()
+{
+     Rectangle outer;
+     Rectangle inner;
+
+     outer._width = 10;
+     outer._height = 10;
+
+     inner._width = 5;
+     inner._height = 5;
+
+     Rectangle small{3, 4};
+     Rectangle small{}; // _width = 0; height = 0
+}
+```
+
+You should always initialize your types in C++.
+
+## Encapsulation
+http://www.tutorialspoint.com/cplusplus/cpp_data_encapsulation.htm
 
 
+"Encapsulation is an Object Oriented Programming concept that binds together the data and functions that manipulate the data, and that keeps both safe from outside interference and misuse."
+
+Any C++ program where you implement a class with public and private members is an example of data encapsulation and data abstraction.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+class Adder{
+   public:
+      // constructor
+      Adder(int i = 0) {
+         total = i;
+      }
+
+      // interface to outside world
+      void addNum(int number) {
+         total += number;
+      }
+
+      // interface to outside world
+      int getTotal() {
+         return total;
+      };
+
+   private:
+      // hidden data from outside world
+      int total;
+};
+
+int main( ) {
+   Adder a;
+
+   a.addNum(10);
+   a.addNum(20);
+   a.addNum(30);
+
+   cout << "Total " << a.getTotal() <<endl;
+   return 0;
+}
+```
+
+## `constant` objects
+
+You define your object class as a constant and also say in the definition of the class which functions do not change the values of the class. This way we can use the methods on the class but not to change the values of the object.

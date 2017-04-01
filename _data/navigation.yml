@@ -20,11 +20,12 @@ foo:
 
 # main links links
 main:
-  - title: "Modelling"
-  - title: "Programming"
+  - title: "Statistics and Modelling"
+  # - title: "Software and Programming"
+  - title: "Software"
     url: /program/cpp/01-program-structure/
+  - title: "Computing"
   - title: "Tutorials"
-  - title: "Favorite Tools"
   #   children:
   #     - title: "C++"
   #     - title: "R"
