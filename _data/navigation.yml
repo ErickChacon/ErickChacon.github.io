@@ -18,14 +18,18 @@ foo:
         url: /child-3-page-url/
 
 
-# main links links
+# main links
 main:
+  - title: "Blog"
+    url: /year-archive/
   - title: "Statistics and Modelling"
+    url: /statistics/01-introduction-statistics/
   # - title: "Software and Programming"
   - title: "Software"
     url: /program/cpp/01-program-structure/
   - title: "Computing"
-  - title: "Tutorials"
+    url: /computing/01-computing/
+  # - title: "Tutorials"
   #   children:
   #     - title: "C++"
   #     - title: "R"
@@ -33,8 +37,6 @@ main:
   #   url: /docs/quick-start-guide/
   # - title: "About"
   #   url: /about/
-  - title: "Blog"
-    url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Terms &amp; Privacy Policy"
@@ -49,6 +51,22 @@ program:
     children:
       - title: "Introduction to R"
       - title: "Objects"
+
+# Statistics and modelling links.
+statistics:
+  - title: Introduction to Statistics
+  - title: Inference Methods
+  - title: Modelling
+
+inference:
+  - title: Introduction
+  - title: Statistics Inference
+  - title: Bayesian Inference
+
+modelling:
+  - title: Introduction
+  - title: Models
+  - title: Spatio-Temporal Models
 
 # documentation links
 docs:
