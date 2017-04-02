@@ -22,8 +22,12 @@ foo:
 main:
   - title: "Blog"
     url: /year-archive/
-  - title: "Statistics and Modelling"
+  - title: "Statistics"
     url: /statistics/01-introduction-statistics/
+  - title: "Inference"
+    url: /inference/expectation-maximization/
+  - title: "Modelling"
+    url: /modelling/01-introduction/
   # - title: "Software and Programming"
   - title: "Software"
     url: /program/cpp/01-program-structure/
@@ -54,13 +58,17 @@ program:
 
 # Statistics and modelling links.
 statistics:
-  - title: Introduction to Statistics
-  - title: Inference Methods
-  - title: Modelling
+  - title: Introduction
+  - title: Probability
+  - title: Likelihood
 
 inference:
   - title: Introduction
-  - title: Statistics Inference
+  - title: Maximum Likelihood
+    children:
+      - title: "EM Algorithm"
+        url: /inference/expectation-maximization/
+  - title: Restricted Maximum Likelihood
   - title: Bayesian Inference
 
 modelling:

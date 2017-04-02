@@ -268,6 +268,18 @@ defaults:
       comments: false
       sidebar:
         nav: "inference"
+  # _modelling
+  - scope:
+      path: ""
+      type: modelling
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "modelling"
   # _computing
   - scope:
       path: ""
