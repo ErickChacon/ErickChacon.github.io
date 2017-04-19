@@ -80,7 +80,7 @@ analytics:
 author:
   name             : *name
   avatar           : "/assets/images/erick-chacon.JPG"
-  bio              : "PhD Student in Statistis and Epidemiology."
+  bio              : "PhD Student in Statistics and Epidemiology."
   location         : "Lancaster, UK"
   email            :
   uri              : "https://erickchacon.github.io/"
