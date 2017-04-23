@@ -123,7 +123,7 @@ ggplot(data, aes(time, precipitation)) +
 
 ## Highlighting floods and droughts
 
-McKee defined a drought as a period of time where the standardized precipitation index (SPI) is continuously negative falling down than $-1$ at least one time. Based on this definition, I created a function `find_flood_drought` to detect extreme events using the SPI. You can view the code [here](https://github.com/ErickChacon/day2day/blob/5967cb0daa4e1237d6bcf73a0c3406e33bcf08f3/R/spi-rain.R#L111-L131), Then a visualization of extreme events can be done using `find_flood_drought` and `stat_events` as follows. Note that the event is used as same as before, indicating with a value equals to $1$ that we want to highlight that corresponding value of the precipitation.
+McKee defined a drought as a period of time where the standardized precipitation index (SPI) is continuously negative falling down than $-1$ at least one time. Based on this definition, I created a function `find_flood_drought` to detect extreme events using the SPI. You can view the code [here](https://github.com/ErickChacon/day2day/blob/347d0774d89eed5c020834f8924ea9e94e17cbd7/R/spi-rain.R#L111-L132), Then a visualization of extreme events can be done using `find_flood_drought` and `stat_events` as follows. Note that the event is used as same as before, indicating with a value equals to $1$ that we want to highlight that corresponding value of the precipitation.
 
 
 ```r
