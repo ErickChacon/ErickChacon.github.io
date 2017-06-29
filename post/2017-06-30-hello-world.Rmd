@@ -1,0 +1,14 @@
+---
+title: hello-world
+author: ~
+date: '2017-06-30'
+slug: hello-world
+categories: []
+tags: []
+---
+
+```{r}
+plot(1:10)
+```
+
+
