@@ -1,15 +1,4 @@
-_site/
-_theme_packages/
-_drafts/
-
-.sass-cache/
-.jekyll-metadata
-
-
-Thumbs.db
-.DS_Store
-
-!.gitkeep
-
-.rbenv-version
-.rvmrc
+# Ignore all files in this directory
+*
+# Except this file
+!.gitignore
