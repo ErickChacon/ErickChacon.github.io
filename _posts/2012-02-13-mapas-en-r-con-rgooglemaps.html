@@ -1,0 +1,44 @@
+---
+title: Mapas en R con RgoogleMaps
+date: 2012-02-13 11:31:36.000000000 +00:00
+type: post
+published: true
+status: publish
+categories:
+- Software R
+tags:
+- mapa de lima
+- Software R
+---
+<p style="text-align:justify;">Los mapas con el paquete RgoogleMaps se obtienen descargando los mapas desde Google Maps <em>–<strong>valga la redundancia</strong>-, </em>lo bueno es la interface gráfica con que se pueden presentar los mapas incluyendo las calles, centros de atracción, etc. Además la sintaxis para obtener el mapa es sencilla y pueden agregar objetos en la ubicación deseada según su latitud y longitud. El mapa obtenido seria de la siguiente manera:</p>
+<pre><a href="http://statisticalissues.files.wordpress.com/2012/02/limauni.png"><img class="aligncenter size-full wp-image-151" title="Mapa Lima en RgoogleMaps" src="{{ site.baseurl }}/assets/images/limauni.png" alt="" width="640" height="640" /></a></pre>
+<p style="text-align:justify;">El código en R se muestra a continuación:</p>
+
+{% highlight R %}
+#install.packages(rgdal)
+#install.packages(geomapdata)
+#install.packages(sp)
+install.packages(RgoogleMaps)
+library(RgoogleMaps)
+
+# GetMap es para descargar el mapa y PlotOnStaticMap es para mostrar el mapa
+# El Zoom va de 0 a 19
+# Para ver latitud y longitud de Lima
+# http://www.tutiempo.net/Tierra/Peru/Lima-PE035311.html
+PlotOnStaticMap(GetMap(center = c(-12.05, -77.05), zoom = 13,
+                       destfile = Lima.png, maptype = mobile), axes = TRUE)
+# si desean una imagen satelital
+PlotOnStaticMap(GetMap(center = c(-12.05, -77.05), zoom = 13,
+                       destfile = Limasatelital.png, maptype = satellite),
+                       axes = TRUE)
+#Leer mapa
+MyMap = GetMap(center = c(-12.02, -77.05), zoom = 13,
+               destfile = "LimaUNI.png", maptype = mobile)
+#Agregar texto al mapa
+png(file = "Mapa%02d.png", width = 1000, height = 1000)
+TextOnStaticMap(MyMap, lat = c(-12.02 + 0.02 * runif(1),
+                               -12.02 + 0.02*runif(1)),
+                lon = c(-77.05 + 0.02 * runif(1), -77.05 + 0.02 * runif(1)),
+                c("Ingeniería", "Estadística"), cex = 2, col = 'red')
+dev.off()
+{% endhighlight %}
