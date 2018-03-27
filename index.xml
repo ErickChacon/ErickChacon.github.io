@@ -12,6 +12,42 @@
     
     
     <item>
+      <title>ResearchNotes class</title>
+      <link>/software/latex/research-notes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/research-notes/</guid>
+      <description>ReasearchNotes is a LaTex class that provides a nice template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. Compatible with SimpleNotes class.</description>
+    </item>
+    
+    <item>
+      <title>ResearchNotes class</title>
+      <link>/software/latex/simple-notes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/simple-notes/</guid>
+      <description>SimpleNotes is a LaTex class that provides a simple template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. It is compatible with ResearchNotes class.</description>
+    </item>
+    
+    <item>
+      <title>UniThesis LaTex class</title>
+      <link>/software/latex/uni-thesis/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/uni-thesis/</guid>
+      <description>UniThesis is a LaTex class that provides a template for thesis of the National University of Engineering (Lima - Peru).</description>
+    </item>
+    
+    <item>
+      <title>LancsThesis LaTex Class</title>
+      <link>/software/latex/lancs-thesis/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/lancs-thesis/</guid>
+      <description>LancsThesis is a LaTex class that provides a template for thesis of the Lancaster University of Engineering (Lancaster - United Kingdom). It can be customized for other universities.</description>
+    </item>
+    
+    <item>
       <title>A Quick</title>
       <link>/modelling/intro/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
@@ -154,24 +190,6 @@ summary(cars) ## speed dist ## Min.</description>
     
     <item>
       <title>Lorem Ipsum</title>
-      <link>/software/latex/2016-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/2016-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/software/latex/2017-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/2017-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
       <link>/software/markdown/2016-07-23-lorem-ipsum/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -257,15 +275,6 @@ summary(cars) ## speed dist ## Min.</description>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/software/2015-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>first project</title>
-      <link>/software/latex/2015-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/2015-07-23-lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
