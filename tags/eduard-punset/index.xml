@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eduard Punset on Erick Chacon</title>
+    <link>/tags/eduard-punset/</link>
+    <description>Recent content in Eduard Punset on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Apr 2012 18:05:43 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/eduard-punset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redes para la ciencia: Robots para saber cómo somos</title>
+      <link>/post/2012/04/05/redes-para-la-ciencia-robots-para-saber-c%C3%B3mo-somos/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      
+      <guid>/post/2012/04/05/redes-para-la-ciencia-robots-para-saber-c%C3%B3mo-somos/</guid>
+      <description>Otro capítulo maravilloso de Eduard Punset en Redes para la Ciencia:
+En donde Deb Roy (Ingeniero Informático del MIT) explica como realizó un estudio de investigación grabando a su hijo por 2 años, almacenando 300 Gb por día, para poder entender los factores principales que hacen que un niño aprenda a hablar y así poder implementar esta capacidad a un robot.</description>
+    </item>
+    
+  </channel>
+</rss>

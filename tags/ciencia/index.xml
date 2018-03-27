@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ciencia on Erick Chacon</title>
+    <link>/tags/ciencia/</link>
+    <description>Recent content in Ciencia on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Sep 2014 01:31:17 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/ciencia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thesis Template in Latex (UNI)</title>
+      <link>/post/2014/09/18/thesis-template-in-latex-uni/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/post/2014/09/18/thesis-template-in-latex-uni/</guid>
+      <description>Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI).</description>
+    </item>
+    
+    <item>
+      <title>Coursera Downloader</title>
+      <link>/post/2014/07/19/coursera-downloader/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/post/2014/07/19/coursera-downloader/</guid>
+      <description>For people who really like to take courses in the MOOC Coursera, I strongly recommend to use cousera-dl to download a group of lecture resources (.ppt, .pdf, .mp4). You can download all the available resources or make a filter by section name, lecture name, format, others, However, the installation could be a little hard work for people who are not accostumed to Terminal or console, but it really worths.</description>
+    </item>
+    
+    <item>
+      <title>Redes para la ciencia</title>
+      <link>/post/2011/12/22/redes-para-la-ciencia/</link>
+      <pubDate>Thu, 22 Dec 2011 22:44:35 +0000</pubDate>
+      
+      <guid>/post/2011/12/22/redes-para-la-ciencia/</guid>
+      <description>Eduard Punset nació en Barcelona - España, es abogado, economista y comunicador científico. Se preocupa por transmitir el conocimiento científico de diversos aspectos de nuestras vidas a las personas no muy dedicadas a la ciencia ayudandonos a entender diversas situaciones del día a día a través de explicaciones científicas.</description>
+    </item>
+    
+  </channel>
+</rss>

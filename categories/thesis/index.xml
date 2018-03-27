@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thesis on Erick Chacon</title>
+    <link>/categories/thesis/</link>
+    <description>Recent content in Thesis on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Sep 2014 01:31:17 +0100</lastBuildDate>
+    
+	<atom:link href="/categories/thesis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thesis Template in Latex (UNI)</title>
+      <link>/post/2014/09/18/thesis-template-in-latex-uni/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/post/2014/09/18/thesis-template-in-latex-uni/</guid>
+      <description>Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI).</description>
+    </item>
+    
+  </channel>
+</rss>

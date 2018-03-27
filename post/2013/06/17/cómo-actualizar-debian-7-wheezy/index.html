@@ -1,0 +1,283 @@
+
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/basic.css" />
+  
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    "HTML-CSS": { scale: 90}
+  });
+</script>
+  
+  <title>¿Cómo actualizar Debian 7 Wheezy? - Erick Chacon</title>
+  <meta name="author" content="">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=" /">
+          <i class='fa fa-bar-chart'></i>
+          Erick Chacon
+        </a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+          <ul class="navbar-nav ml-auto">
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/"> Research</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/software/"> Software</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post/"> Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/erick-chacon-cv.pdf"> CV</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Statistical Issues</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                
+                <a class="dropdown-item" href="/statistics/"> Statistics</a>
+                
+                <a class="dropdown-item" href="/inference/"> Inference</a>
+                
+                <a class="dropdown-item" href="/modelling/"> Modelling</a>
+                
+                <a class="dropdown-item" href="/programming/"> Programming</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+<style type="text/css" media="screen">
+body {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+</style>
+
+
+<div class="container">
+
+  <h1 class = "text-center"> ¿Cómo actualizar Debian 7 Wheezy? </h1>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
+      <p>
+<strong>Debian 7 Wheezy</strong> es la última actualización estable de las distribución Debian en Linux. Hasta ahora me ha funcionado perfectamente y es por ello que deseo mostrar algunos pasos y sitios web que me funcionaron perfectamente para su actualización e instalaciones de programas que para mi caso son importantes.
+</p>
+<p>
+<strong>0) Instalar de Debian 7 Wheezy:</strong>
+</p>
+<p style="padding-left:30px;">
+Para los que desean instalar el Debian 7 Wheezy, descargar el instalador en <a href="http://www.debian.org/CD/http-ftp/" class="uri">http://www.debian.org/CD/http-ftp/</a>, los tipos de descarga son  CD y DVD. Los CDs son instaladores ligeros, requieren de conexión internet para su buena instalación mientras que los DVD son más completos y no requieren de conexión a internet para culminar la instalación.
+</p>
+<p>
+<strong>1) Actualización de Debian Wheezy:</strong>
+</p>
+<p style="padding-left:30px;">
+<strong>1.1) Preparamos nuestro sistema actual.</strong> Ejecutar los siguientes comando en la consola como superusuario:
+</p>
+<pre class="bash"><code>aptitude update
+aptitude upgrade
+aptitude clean</code></pre>
+<p style="padding-left:30px;">
+Realizamos este paso porque se recomienda que no existan problemas de dependencias entre los paquetes. En caso contrario tratar de arreglar ello o intentar la actualización creando un backup como respaldo.
+</p>
+<p style="padding-left:30px;">
+<strong>1.2) Actualizar la lista de repositorios</strong> para descargar e instalar los paquetes del Debian 7 Wheezy.
+</p>
+<p style="padding-left:30px;">
+Para ello, se debe modificar el archivo   /etc/apt/sources.list quedando de la siguiente manera.
+</p>
+<pre class="bash"><code>deb http://ftp.us.debian.org/debian/ wheezy main
+deb-src http://ftp.us.debian.org/debian/ wheezy main
+deb http://security.debian.org/ wheezy/updates main contrib
+deb-src http://security.debian.org/ wheezy/updates main contrib
+# wheezy-updates, previously known as &#39;volatile&#39;
+deb http://ftp.us.debian.org/debian/ wheezy-updates main contrib
+deb-src http://ftp.us.debian.org/debian/ wheezy-updates main contrib</code></pre>
+<p style="padding-left:30px;">
+<strong>1.3) Actualizar los paquetes de Debian 7 Wheezy</strong>.
+</p>
+<pre class="bash"><code>apt-get update
+apt-get upgrade
+apt-get dist-upgrade
+reboot
+lsb_release -a</code></pre>
+<p style="padding-left:30px;">
+Como resultado debes obtener las características de tu nuevo debian instalado (Debian 7 Wheezy )
+</p>
+<p style="padding-left:30px;">
+<strong>2) Links que funcionan para la instlación de los siguientes programas:</strong>
+</p>
+<p style="padding-left:30px;">
+<strong>2.1) Software R:</strong> <a href="http://www.w3schools.com">http://cran.r-project.org/bin/linux/debian/</a>
+</p>
+<p style="padding-left:30px;">
+Añadimos el siguiente repositorio a  <code> /etc/apt/sources.list</code>.
+</p>
+<pre class="bash"><code># r backports
+deb http://www.vps.fmvz.usp.br/CRAN/bin/linux/debian wheezy-cran3/</code></pre>
+<p style="padding-left:30px;">
+Ejecutamos los siguientes comando en el terminal como superusuario.
+</p>
+<pre class="bash"><code>apt-key adv --keyserver subkeys.pgp.net --recv-key 381BA480
+apt-get update
+apt-get install r-base r-base-dev</code></pre>
+<p style="padding-left:30px;">
+<strong>2.2) IDE Rstudio:</strong> <a href="http://www.rstudio.com/ide/download/desktop">http://www.rstudio.com/ide/download/desktop</a>
+</p>
+<p style="padding-left:30px;">
+Instalar con GDebi Package Instaler haciendo anticlick en el paquete descargando y abriendo con GDebi.
+</p>
+<p style="padding-left:30px;">
+<strong>2.3) Texstudio (Interface para el Editor de Textos Científicos Latex):</strong> <a href="http://packages.debian.org/wheezy/texstudio">http://packages.debian.org/wheezy/texstudio</a>
+</p>
+<p style="padding-left:30px;">
+Instalarlo por medio del Gestor de Paquetes. Sin embargo, la instalación no está completa, para el correcto funcionamiento añadir los paquetes recomendados y sugeridos en el link de esta sección.
+</p>
+<p style="padding-left:30px;">
+<strong>2.4) Skype:</strong> <a href="http://wiki.debian.org/skype">http://wiki.debian.org/skype</a>
+</p>
+<p style="padding-left:30px;">
+Seguir los pasos del link, funciona y está completo.
+</p>
+<p style="padding-left:30px;">
+<strong>2.5) Google Earth:</strong> <a href="http://diversidadyunpocodetodo.blogspot.com.es/2013/05/debian-wheezy-instalar-google-earth-64-ati-multiarch.html">http://diversidadyunpocodetodo.blogspot.com.es/2013/05/debian-wheezy-instalar-google-earth-64-ati-multiarch.html</a>
+</p>
+<p style="padding-left:30px;">
+Seguir los pasos del link pero no considerar el siguiente código porque el paquete ia32-libs ya no está disponible:
+</p>
+<pre class="bash"><code>apt-get install ia32-libs</code></pre>
+<p style="padding-left:30px;">
+<strong>2.6) Mendeley Desktop (Gestor de bibliografías):</strong> <a href="http://www.mendeley.com/">http://www.mendeley.com/</a>
+</p>
+<p style="padding-left:30px;">
+Instalarlo por medio del Gestor de Paquetes.
+</p>
+<p style="padding-left:30px;">
+<strong>2.7) Dropbox:</strong> <a href="https://www.dropbox.com/">https://www.dropbox.com/</a>
+</p>
+<p style="padding-left:30px;">
+<strong>2.8) Actualizar Iceweasel (Firefox):</strong> <a href="http://linuxgnublog.org/instalar-la-ultima-version-de-iceweasel-en-debian-wheezy/">http://linuxgnublog.org/instalar-la-ultima-version-de-iceweasel-en-debian-wheezy/</a>
+</p>
+<p style="padding-left:30px;">
+Continuar con el link mostrado pero sólo agregar a /etc/apt/sources.list.
+</p>
+<pre class="bash"><code># mozilla backports
+deb http://mozilla.debian.net/ wheezy-backports iceweasel-release
+deb-src http://mozilla.debian.net/ wheezy-backports iceweasel-release</code></pre>
+<p style="padding-left:30px;">
+<strong>2.9) Actualizar Flash Player:</strong> <a href="http://permalink.gmane.org/gmane.linux.debian.user.spanish/180717">http://permalink.gmane.org/gmane.linux.debian.user.spanish/180717</a>
+</p>
+<p style="padding-left:30px;">
+Agregar a /etc/apt/sources.list.
+</p>
+<pre class="bash"><code>deb http://ftp.us.debian.org/debian wheezy contrib
+{% endhighlight %}
+&lt;pre style=&quot;padding-left:30px;&quot;&gt;Ejecutar en la consola, como superusuario:&lt;/pre&gt;
+{% highlight bash %}
+apt-get update
+apt-get install flashplugin-nonfree</code></pre>
+<pre style="padding-left:30px;">Espero les sirva de ayuda, hasta la próxima.</pre>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<footer class="footer bg-light fixed-bottom text-muted">
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    
+    <a href = "mailto:eral.th07@email.com" class="btn btn-social-icon btn-lg btn-envelope">
+      <i class="fa fa-envelope"></i></a>
+    
+    <a href = "https://github.com/ErickChacon" class="btn btn-social-icon btn-lg btn-github">
+      <i class="fa fa-github"></i></a>
+    
+    <a href = "https://www.linkedin.com/in/erick-chacon-montalvan-7bba9141" class="btn btn-social-icon btn-lg btn-linkedin">
+      <i class="fa fa-linkedin"></i></a>
+    
+    <a href = "https://twitter.com/eralfe" class="btn btn-social-icon btn-lg btn-twitter">
+      <i class="fa fa-twitter"></i></a>
+    
+  </div>
+  <div class="col-md-6">
+    <div class='float-vertical-align'>
+      <small>
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Boostrap</a>
+        
+      </small>
+    </div>
+  </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

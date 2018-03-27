@@ -39,13 +39,13 @@
     </item>
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/post/2016/02/14/a-plain-markdown-post/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <title>Visualizing extreme events with ggplot2</title>
+      <link>/post/2017/04/22/visualizing-extreme-events-with-ggplot2/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
       
-      <guid>/post/2016/02/14/a-plain-markdown-post/</guid>
-      <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.
-1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:</description>
+      <guid>/post/2017/04/22/visualizing-extreme-events-with-ggplot2/</guid>
+      <description>When working with time series, sometimes, it is desired to highlight some events with some particular pattern.
+For example, highlight periods of time where the variable on interest exceed certain threshold or conversely. With this in mind, I extended an stat of ggplot2 to allow easy visualization of those events.</description>
     </item>
     
     <item>
@@ -56,17 +56,6 @@
       <guid>/inference/020-bayesian/</guid>
       <description>This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.
 1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015/07/23/hello-r-markdown/</guid>
-      <description>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min.</description>
     </item>
     
     <item>
@@ -106,15 +95,6 @@ summary(cars) ## speed dist ## Min.</description>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/inference/basics/001-intro/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/post/2015/07/23/lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2015/07/23/lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
@@ -314,6 +294,143 @@ summary(cars) ## speed dist ## Min.</description>
       
       <guid>/software/r/2015-07-23-lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade Debian Wheezy to Debian Jessie</title>
+      <link>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</guid>
+      <description>In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package lib6. A reliable solution was to upgrade my system to Jessie, the current stable distribution of Debian.</description>
+    </item>
+    
+    <item>
+      <title>Thesis Template in Latex (UNI)</title>
+      <link>/post/2014/09/18/thesis-template-in-latex-uni/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/post/2014/09/18/thesis-template-in-latex-uni/</guid>
+      <description>Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI).</description>
+    </item>
+    
+    <item>
+      <title>Coursera Downloader</title>
+      <link>/post/2014/07/19/coursera-downloader/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/post/2014/07/19/coursera-downloader/</guid>
+      <description>For people who really like to take courses in the MOOC Coursera, I strongly recommend to use cousera-dl to download a group of lecture resources (.ppt, .pdf, .mp4). You can download all the available resources or make a filter by section name, lecture name, format, others, However, the installation could be a little hard work for people who are not accostumed to Terminal or console, but it really worths.</description>
+    </item>
+    
+    <item>
+      <title>Print eps figure with accent in matlab</title>
+      <link>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</guid>
+      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations. We usually add text in the image as the axis labels, titles or texts in certain positions.</description>
+    </item>
+    
+    <item>
+      <title>Summary of Cluster Analysis Distances</title>
+      <link>/post/2013/11/08/summary-of-cluster-analysis-distances/</link>
+      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
+      
+      <guid>/post/2013/11/08/summary-of-cluster-analysis-distances/</guid>
+      <description>Cluster analysis is one of the most useful techniques in research and applications studies in a wide range of branches. It is also consider as a data reduction technique like principal components analysis (PCA), where instead of analyzing the variables, we analyze the profiles or registers.</description>
+    </item>
+    
+    <item>
+      <title>Datos sin estadística</title>
+      <link>/post/2013/06/21/datos-sin-estad%C3%ADstica/</link>
+      <pubDate>Fri, 21 Jun 2013 14:15:52 +0100</pubDate>
+      
+      <guid>/post/2013/06/21/datos-sin-estad%C3%ADstica/</guid>
+      <description>
+ “Los datos, sin estadística, no son más que ruido y confusión.”   “Data, without statistics, it is not more than noise and confusion.”  </description>
+    </item>
+    
+    <item>
+      <title>¿Cómo actualizar Debian 7 Wheezy?</title>
+      <link>/post/2013/06/17/c%C3%B3mo-actualizar-debian-7-wheezy/</link>
+      <pubDate>Mon, 17 Jun 2013 23:37:02 +0100</pubDate>
+      
+      <guid>/post/2013/06/17/c%C3%B3mo-actualizar-debian-7-wheezy/</guid>
+      <description>Debian 7 Wheezy es la última actualización estable de las distribución Debian en Linux. Hasta ahora me ha funcionado perfectamente y es por ello que deseo mostrar algunos pasos y sitios web que me funcionaron perfectamente para su actualización e instalaciones de programas que para mi caso son importantes.</description>
+    </item>
+    
+    <item>
+      <title>Probabilidades de la vida</title>
+      <link>/post/2012/10/02/probabilidades-de-la-vida/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
+      
+      <guid>/post/2012/10/02/probabilidades-de-la-vida/</guid>
+      <description>Este capítulo de Redes para la ciencia nos muestra que las probabilidades están en los sucesos que vivimos día a día. Aunque existen ciertos errores con las probabilidades y los porcentajes presentados, es una manera muy interesante y entretenida de hablar de probabilidades con todo el mundo.</description>
+    </item>
+    
+    <item>
+      <title>¿Porqué usar la media armónica?</title>
+      <link>/post/2012/04/07/porqu%C3%A9-usar-la-media-arm%C3%B3nica/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
+      
+      <guid>/post/2012/04/07/porqu%C3%A9-usar-la-media-arm%C3%B3nica/</guid>
+      <description>Recuerdo cuando llevé la clase de Estadística Descriptiva, y también la de Inferencia Paramétrica, nos presentaron estadísticos descriptivos como el promedio aritmético, geométrico y armónico. En ese instante no tenía ni la mas vaga idea de cuando utilizar el promedio armónico ya que al parecer, no podía interpretar, aquella fórmula, de una manera más comprensible o que de pistas de una interpretación clara tal como lo es el promedio aritmético.</description>
+    </item>
+    
+    <item>
+      <title>Redes para la ciencia: Robots para saber cómo somos</title>
+      <link>/post/2012/04/05/redes-para-la-ciencia-robots-para-saber-c%C3%B3mo-somos/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      
+      <guid>/post/2012/04/05/redes-para-la-ciencia-robots-para-saber-c%C3%B3mo-somos/</guid>
+      <description>Otro capítulo maravilloso de Eduard Punset en Redes para la Ciencia:
+En donde Deb Roy (Ingeniero Informático del MIT) explica como realizó un estudio de investigación grabando a su hijo por 2 años, almacenando 300 Gb por día, para poder entender los factores principales que hacen que un niño aprenda a hablar y así poder implementar esta capacidad a un robot.</description>
+    </item>
+    
+    <item>
+      <title>Mapas en R con RgoogleMaps</title>
+      <link>/post/2012/02/13/mapas-en-r-con-rgooglemaps/</link>
+      <pubDate>Mon, 13 Feb 2012 11:31:36 +0000</pubDate>
+      
+      <guid>/post/2012/02/13/mapas-en-r-con-rgooglemaps/</guid>
+      <description>Los mapas con el paquete RgoogleMaps se obtienen descargando los mapas desde Google Maps –valga la redundancia-, lo bueno es la interface gráfica con que se pueden presentar los mapas incluyendo las calles, centros de atracción, etc. Además la sintaxis para obtener el mapa es sencilla y pueden agregar objetos en la ubicación deseada según su latitud y longitud.</description>
+    </item>
+    
+    <item>
+      <title>Mapas en el paquete de &#34;Métodos para datos espaciales&#34; (sp) en R</title>
+      <link>/post/2012/02/11/mapas-en-el-paquete-de-m%C3%A9todos-para-datos-espaciales-sp-en-r/</link>
+      <pubDate>Sat, 11 Feb 2012 17:59:20 +0000</pubDate>
+      
+      <guid>/post/2012/02/11/mapas-en-el-paquete-de-m%C3%A9todos-para-datos-espaciales-sp-en-r/</guid>
+      <description>Para trabajar con este paquete podemos descargar la información georeferenciada de http://gadm.org/ de cualquier país, lo malo es que a mayor nivel de detalle tal como distritos existen discrepancias con la realidad. De todas maneras este paquete resulta interesante y útil a la hora de trabajar con datos georeferenciados y mucho más si son datos propios.</description>
+    </item>
+    
+    <item>
+      <title>Teorema del Límite Central</title>
+      <link>/post/2011/12/23/teorema-del-l%C3%ADmite-central/</link>
+      <pubDate>Fri, 23 Dec 2011 14:27:52 +0000</pubDate>
+      
+      <guid>/post/2011/12/23/teorema-del-l%C3%ADmite-central/</guid>
+      <description>El siguiente código en el software R nos brinda una forma sencilla para comprobar el teorema del límite central, explícitamente para verificar la distribución muestral de la media muestral. Como puede ver tiene distintas opciones de escoger la distribución, sin necesidad de asumir la normalidad, pero las variables \(x_i\) si deben ser independientes e identicamente distribuidas.</description>
+    </item>
+    
+    <item>
+      <title>Redes para la ciencia</title>
+      <link>/post/2011/12/22/redes-para-la-ciencia/</link>
+      <pubDate>Thu, 22 Dec 2011 22:44:35 +0000</pubDate>
+      
+      <guid>/post/2011/12/22/redes-para-la-ciencia/</guid>
+      <description>Eduard Punset nació en Barcelona - España, es abogado, economista y comunicador científico. Se preocupa por transmitir el conocimiento científico de diversos aspectos de nuestras vidas a las personas no muy dedicadas a la ciencia ayudandonos a entender diversas situaciones del día a día a través de explicaciones científicas.</description>
+    </item>
+    
+    <item>
+      <title>Ejemplo inicial de grados de libertad</title>
+      <link>/post/2011/12/22/ejemplo-inicial-de-grados-de-libertad/</link>
+      <pubDate>Thu, 22 Dec 2011 21:59:23 +0000</pubDate>
+      
+      <guid>/post/2011/12/22/ejemplo-inicial-de-grados-de-libertad/</guid>
+      <description>Para los estadísticos o ingenieros estadísticos el término de “grados de libertad” es muy conocido, incluso en la mayoría de los libros de estadística y probabilidad es muy utilizado pero no dejan un concepto claro sobre el mismo, siendo uno de los más conocidos “el número de variables menos el número de parámetros a estimar”.</description>
     </item>
     
     <item>

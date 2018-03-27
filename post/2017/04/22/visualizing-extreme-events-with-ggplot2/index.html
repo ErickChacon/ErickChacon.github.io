@@ -1,0 +1,262 @@
+
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/basic.css" />
+  
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    "HTML-CSS": { scale: 90}
+  });
+</script>
+  
+  <title>Visualizing extreme events with ggplot2 - Erick Chacon</title>
+  <meta name="author" content="">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=" /">
+          <i class='fa fa-bar-chart'></i>
+          Erick Chacon
+        </a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+          <ul class="navbar-nav ml-auto">
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/"> Research</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/software/"> Software</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post/"> Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/erick-chacon-cv.pdf"> CV</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Statistical Issues</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                
+                <a class="dropdown-item" href="/statistics/"> Statistics</a>
+                
+                <a class="dropdown-item" href="/inference/"> Inference</a>
+                
+                <a class="dropdown-item" href="/modelling/"> Modelling</a>
+                
+                <a class="dropdown-item" href="/programming/"> Programming</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+<style type="text/css" media="screen">
+body {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+</style>
+
+
+<div class="container">
+
+  <h1 class = "text-center"> Visualizing extreme events with ggplot2 </h1>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
+      <p>When working with time series, sometimes, it is desired to highlight some events with some particular pattern.</p>
+<p>For example, highlight periods of time where the variable on interest exceed certain threshold or conversely. With this in mind, I extended an <code>stat</code> of <code>ggplot2</code> to allow easy visualization of those events. A will show how to use this <code>stat</code> using a simulated time series with exponential correlation function.</p>
+<div id="required-packages" class="section level2">
+<h2>Required packages</h2>
+<p>I will use the <code>tidyverse</code> collection of packages, <code>lubridate</code> and my package <code>day2day</code>. If you want to install <code>day2day</code>, you can get it using the command <code>devtools::install_github(&quot;erickchacon/day2day&quot;)</code>.</p>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## Loading tidyverse: ggplot2
+## Loading tidyverse: tibble
+## Loading tidyverse: tidyr
+## Loading tidyverse: readr
+## Loading tidyverse: purrr
+## Loading tidyverse: dplyr</code></pre>
+<pre><code>## Conflicts with tidy packages ----------------------------------------------</code></pre>
+<pre><code>## filter(): dplyr, stats
+## lag():    dplyr, stats</code></pre>
+<pre class="r"><code>library(lubridate)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     date</code></pre>
+<pre class="r"><code>library(day2day)</code></pre>
+</div>
+<div id="simulating-correlated-time-series" class="section level2">
+<h2>Simulating correlated time series</h2>
+<p>I use a exponential correlation function <span class="math inline">\(c(d) = \exp(-d/\phi)\)</span> to represent the correlation between two random variables with temporal distance of <span class="math inline">\(d\)</span>. Then, in order to simulate <span class="math inline">\(Y \sim N(\mu, \mathbf{\Sigma})\)</span>, I use the Cholesky decomposition <span class="math inline">\(\mathbf{\Sigma} = \mathbf{L}\mathbf{L}^\intercal\)</span>. Defining <span class="math inline">\(Z \sim N(0, I)\)</span>, it can be shown that <span class="math inline">\(\mathbf{L}Z \sim N(\mu, \mathbf{L}U = \Sigma)\)</span>. Hence, I just have to simulate <span class="math inline">\(Z\)</span>, <code>rnorm(n)</code>, and compute <span class="math inline">\(\mathbf{L}Z\)</span>.</p>
+<pre class="r"><code>n &lt;- 300
+time &lt;- seq(1, n, 3)
+temporal_dist &lt;- as.matrix(dist(time))
+cov_matrix &lt;- exp(-temporal_dist/7)
+upper_chol &lt;- chol(cov_matrix)
+set.seed(1)
+precipitation &lt;- t(upper_chol) %*% rnorm(length(time))
+time &lt;- ymd(&quot;05-01-01&quot;) + weeks(time)
+data &lt;- data.frame(time, precipitation)</code></pre>
+<p>Then, the resulting data frame contains the time and the standardized precipitation under analysis as shown below. Note that most of the values are between -2 and 2.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) + geom_line()</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-3-1.png" width="1400" /></p>
+</div>
+<div id="visualizing-positive-and-negative-events" class="section level2">
+<h2>Visualizing positive and negative events</h2>
+<p>To start, I would like to highlight the difference between events that are constantly positive or negative. So, I made a try using <code>geom_area</code>.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  geom_point(color = 2, alpha = 0.3) +
+  geom_area(alpha = 0.3)</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-4-1.png" width="1400" /></p>
+<p>It makes the work, but the quality of the <code>geom_area</code> when the series change from positive to negative, or conversely, is not good. You can see that there is a difference between the <code>geom_line</code> and <code>geom_area</code> around these transitions. So, I created a <code>stat_events</code> that make the same thing as <code>geom_area</code>, but with better quality. Look in the next image how the <code>lines</code> and <code>areas</code> match perfectly.You can see that code to create <code>stat_events</code> in <a href="https://github.com/ErickChacon/day2day/blob/5967cb0daa4e1237d6bcf73a0c3406e33bcf08f3/R/gg-adds.R#L143-L192">my day2day package</a>.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  geom_point(color = 2, alpha = 0.3) +
+  stat_events(alpha = 0.3)</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-5-1.png" width="1400" /></p>
+<p>The geometry <code>area</code> only allow you to make a <code>ribbon</code> with a reference point of zero. However, maybe, you would like to differentiate two events using another reference point (e.g. <span class="math inline">\(-0.5\)</span> or <span class="math inline">\(0.5\)</span>). This is allow in <code>stat_events</code> by defining the threshold of interest. In the next image, I have used <code>threshold = 0.5</code>.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  geom_point(color = 2, alpha = 0.3) +
+  stat_events(threshold = 0.5, alpha = 0.3)</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-6-1.png" width="1400" /></p>
+</div>
+<div id="differentiating-events" class="section level2">
+<h2>Differentiating events</h2>
+<p>Now it comes the fun part, the main reason I created this <code>stat</code> is because I wanted to differentiate two different events by coloring them and probably with a name for the legend. My first thought to highlight particular events (e.g. only positives) was using <code>subset</code> on <code>geom_area</code>.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  geom_area(data = subset(data, precipitation &gt; 0), alpha = 0.3)</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-7-1.png" width="1400" /></p>
+<p>It did not give me good results, because it just jump from one positive event to the next positive event, this jump make the polygons look different from the original time series. For this reason, I added the <code>event</code> aesthetics to <code>stat_events</code> such as it indicates the event of interest. It should be numeric variable taking <span class="math inline">\(1\)</span> (event), <span class="math inline">\(0\)</span> (no event) and <code>NA</code>. With this argument, we can easily identify and draw events exceeding or not certain threshold. Let’s assume that flood events are detected when the standardized precipitation is greater than <span class="math inline">\(&gt;0.5\)</span> and droughts when it is lower than <span class="math inline">\(&lt;-0.5\)</span>. They can be highlighted as follows.</p>
+<pre class="r"><code>ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  stat_events(aes(event = I(1 * (precipitation &gt; 0.5)), fill = &quot;flood&quot;),
+              threshold = 0.5, alpha = 0.3) +
+  stat_events(aes(event = I(1 * (precipitation &lt; -0.5)), fill = &quot;drought&quot;),
+              threshold = - 0.5, alpha = 0.3)</code></pre>
+<pre><code>## Warning: Ignoring unknown aesthetics: event
+
+## Warning: Ignoring unknown aesthetics: event</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-8-1.png" width="1400" /></p>
+</div>
+<div id="highlighting-floods-and-droughts" class="section level2">
+<h2>Highlighting floods and droughts</h2>
+<p>McKee defined a drought as a period of time where the standardized precipitation index (SPI) is continuously negative falling down than <span class="math inline">\(-1\)</span> at least one time. Based on this definition, I created a function <code>find_flood_drought</code> to detect extreme events using the SPI. You can view the code <a href="https://github.com/ErickChacon/day2day/blob/347d0774d89eed5c020834f8924ea9e94e17cbd7/R/spi-rain.R#L111-L132">here</a>, Then a visualization of extreme events can be done using <code>find_flood_drought</code> and <code>stat_events</code> as follows. Note that the event is used as same as before, indicating with a value equals to <span class="math inline">\(1\)</span> that we want to highlight that corresponding value of the precipitation.</p>
+<pre class="r"><code>data &lt;- data %&gt;% mutate(
+  extremes = find_flood_drought(precipitation),
+  floods = 1 * (extremes == &quot;flood&quot;),
+  droughts = 1 * (extremes == &quot;drought&quot;))
+
+ggplot(data, aes(time, precipitation)) +
+  geom_line() +
+  stat_events(aes(event = floods, fill = &quot;flood&quot;), alpha = 0.3) +
+  stat_events(aes(event = droughts, fill = &quot;drought&quot;), alpha = 0.3)</code></pre>
+<pre><code>## Warning: Ignoring unknown aesthetics: event
+
+## Warning: Ignoring unknown aesthetics: event</code></pre>
+<p><img src="/post/2017-04-22-visualize-extreme-events-with-ggplot_files/figure-html/unnamed-chunk-9-1.png" width="1400" /></p>
+<p>I hope you have enjoyed this post about visualizing events in a time series and if you are asking yourself how I created the <code>stat_events</code> functions, take a view on this tutorial about <a href="http://ggplot2.tidyverse.org/articles/extending-ggplot2.html">extending ggplot2</a>.</p>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<footer class="footer bg-light fixed-bottom text-muted">
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    
+    <a href = "mailto:eral.th07@email.com" class="btn btn-social-icon btn-lg btn-envelope">
+      <i class="fa fa-envelope"></i></a>
+    
+    <a href = "https://github.com/ErickChacon" class="btn btn-social-icon btn-lg btn-github">
+      <i class="fa fa-github"></i></a>
+    
+    <a href = "https://www.linkedin.com/in/erick-chacon-montalvan-7bba9141" class="btn btn-social-icon btn-lg btn-linkedin">
+      <i class="fa fa-linkedin"></i></a>
+    
+    <a href = "https://twitter.com/eralfe" class="btn btn-social-icon btn-lg btn-twitter">
+      <i class="fa fa-twitter"></i></a>
+    
+  </div>
+  <div class="col-md-6">
+    <div class='float-vertical-align'>
+      <small>
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Boostrap</a>
+        
+      </small>
+    </div>
+  </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

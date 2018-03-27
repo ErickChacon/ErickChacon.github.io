@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probabilidades on Erick Chacon</title>
+    <link>/tags/probabilidades/</link>
+    <description>Recent content in Probabilidades on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2012 00:00:56 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/probabilidades/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Probabilidades de la vida</title>
+      <link>/post/2012/10/02/probabilidades-de-la-vida/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
+      
+      <guid>/post/2012/10/02/probabilidades-de-la-vida/</guid>
+      <description>Este capítulo de Redes para la ciencia nos muestra que las probabilidades están en los sucesos que vivimos día a día. Aunque existen ciertos errores con las probabilidades y los porcentajes presentados, es una manera muy interesante y entretenida de hablar de probabilidades con todo el mundo.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software R on Erick Chacon</title>
+    <link>/tags/software-r/</link>
+    <description>Recent content in Software R on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2015 20:21:43 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/software-r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrade Debian Wheezy to Debian Jessie</title>
+      <link>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</guid>
+      <description>In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package lib6. A reliable solution was to upgrade my system to Jessie, the current stable distribution of Debian.</description>
+    </item>
+    
+    <item>
+      <title>Mapas en R con RgoogleMaps</title>
+      <link>/post/2012/02/13/mapas-en-r-con-rgooglemaps/</link>
+      <pubDate>Mon, 13 Feb 2012 11:31:36 +0000</pubDate>
+      
+      <guid>/post/2012/02/13/mapas-en-r-con-rgooglemaps/</guid>
+      <description>Los mapas con el paquete RgoogleMaps se obtienen descargando los mapas desde Google Maps –valga la redundancia-, lo bueno es la interface gráfica con que se pueden presentar los mapas incluyendo las calles, centros de atracción, etc. Además la sintaxis para obtener el mapa es sencilla y pueden agregar objetos en la ubicación deseada según su latitud y longitud.</description>
+    </item>
+    
+    <item>
+      <title>Mapas en el paquete de &#34;Métodos para datos espaciales&#34; (sp) en R</title>
+      <link>/post/2012/02/11/mapas-en-el-paquete-de-m%C3%A9todos-para-datos-espaciales-sp-en-r/</link>
+      <pubDate>Sat, 11 Feb 2012 17:59:20 +0000</pubDate>
+      
+      <guid>/post/2012/02/11/mapas-en-el-paquete-de-m%C3%A9todos-para-datos-espaciales-sp-en-r/</guid>
+      <description>Para trabajar con este paquete podemos descargar la información georeferenciada de http://gadm.org/ de cualquier país, lo malo es que a mayor nivel de detalle tal como distritos existen discrepancias con la realidad. De todas maneras este paquete resulta interesante y útil a la hora de trabajar con datos georeferenciados y mucho más si son datos propios.</description>
+    </item>
+    
+  </channel>
+</rss>

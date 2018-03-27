@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on Erick Chacon</title>
+    <link>/tags/latex/</link>
+    <description>Recent content in LaTeX on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2015 20:21:43 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Upgrade Debian Wheezy to Debian Jessie</title>
+      <link>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</guid>
+      <description>In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package lib6. A reliable solution was to upgrade my system to Jessie, the current stable distribution of Debian.</description>
+    </item>
+    
+    <item>
+      <title>Thesis Template in Latex (UNI)</title>
+      <link>/post/2014/09/18/thesis-template-in-latex-uni/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/post/2014/09/18/thesis-template-in-latex-uni/</guid>
+      <description>Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI).</description>
+    </item>
+    
+  </channel>
+</rss>

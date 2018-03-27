@@ -21,7 +21,17 @@
   <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
   <script>hljs.initHighlightingOnLoad();</script>
   
-  <title>Recent Posts - Erick Chacon</title>
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    "HTML-CSS": { scale: 90}
+  });
+</script>
+  
+  <title>List of Posts - Erick Chacon</title>
   <meta name="author" content="">
 </head>
 
@@ -122,7 +132,7 @@ body {
 
 <div class="jumbotron">
   <div class="container">
-    <h2 class="text-center"> Recent Posts </h2>
+    <h2 class="text-center"> List of Posts </h2>
     <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 text-justify">
       
     </div>
@@ -139,54 +149,246 @@ body {
   <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
     <div class="list-group">
       
-      <a href="/post/2016/02/14/a-plain-markdown-post/" class="list-group-item list-group-item-action flex-column align-items-start">
+      <a href="/post/2017/04/22/visualizing-extreme-events-with-ggplot2/" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1 text-primary"> A Plain Markdown Post </h5>
-          <small>3 min</small>
+          <h5 class="mb-1 text-primary"> Visualizing extreme events with ggplot2 </h5>
+          <small>5 min</small>
         </div>
-        <p class="mb-1">This sample post is mainly for blogdown users. If you do not use blogdown, you can skip the first section.
-1. Markdown or R Markdown This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are: </p>
+        <p class="mb-1">When working with time series, sometimes, it is desired to highlight some events with some particular pattern.
+For example, highlight periods of time where the variable on interest exceed certain threshold or conversely. With this in mind, I extended an stat of ggplot2 to allow easy visualization of those events. </p>
         
         
-        <span class="badge badge-light badge-pill text-secondary"> blogdown</span>
+        <span class="badge badge-light badge-pill text-secondary"> ggplot2</span>
         
-        <span class="badge badge-light badge-pill text-secondary"> Markdown</span>
+        <span class="badge badge-light badge-pill text-secondary"> tidyverse</span>
         
-        <span class="badge badge-light badge-pill text-secondary"> MathJax</span>
-        
-        <span class="badge badge-light badge-pill text-secondary"> Pandoc</span>
-        
-        <span class="badge badge-light badge-pill text-secondary"> RStudio</span>
+        <span class="badge badge-light badge-pill text-secondary"> R</span>
         
       </a>
       
-      <a href="/post/2015/07/23/hello-r-markdown/" class="list-group-item list-group-item-action flex-column align-items-start">
+      <a href="/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1 text-primary"> Hello R Markdown </h5>
+          <h5 class="mb-1 text-primary"> Upgrade Debian Wheezy to Debian Jessie </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package lib6. A reliable solution was to upgrade my system to Jessie, the current stable distribution of Debian. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> LaTeX</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Linux</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Matlab</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Software R</span>
+        
+      </a>
+      
+      <a href="/post/2014/09/18/thesis-template-in-latex-uni/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Thesis Template in Latex (UNI) </h5>
           <small>1 min</small>
         </div>
-        <p class="mb-1">This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. </p>
+        <p class="mb-1">Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI). </p>
         
         
-        <span class="badge badge-light badge-pill text-secondary"> R Markdown</span>
+        <span class="badge badge-light badge-pill text-secondary"> Ciencia</span>
         
-        <span class="badge badge-light badge-pill text-secondary"> plot</span>
+        <span class="badge badge-light badge-pill text-secondary"> Education</span>
         
-        <span class="badge badge-light badge-pill text-secondary"> regression</span>
+        <span class="badge badge-light badge-pill text-secondary"> LaTeX</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Scientific Writing</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Thesis</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Universidad Nacional de Ingeniería</span>
         
       </a>
       
-      <a href="/post/2015/07/23/lorem-ipsum/" class="list-group-item list-group-item-action flex-column align-items-start">
+      <a href="/post/2014/07/19/coursera-downloader/" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1 text-primary"> Lorem Ipsum </h5>
+          <h5 class="mb-1 text-primary"> Coursera Downloader </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">For people who really like to take courses in the MOOC Coursera, I strongly recommend to use cousera-dl to download a group of lecture resources (.ppt, .pdf, .mp4). You can download all the available resources or make a filter by section name, lecture name, format, others, However, the installation could be a little hard work for people who are not accostumed to Terminal or console, but it really worths. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Ciencia</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Education</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Informática</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> MOOC</span>
+        
+      </a>
+      
+      <a href="/post/2014/01/17/print-eps-figure-with-accent-in-matlab/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Print eps figure with accent in matlab </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations. We usually add text in the image as the axis labels, titles or texts in certain positions. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Data Visualization</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Eps image</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Informática</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> mapa de lima</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Matlab</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Programming</span>
+        
+      </a>
+      
+      <a href="/post/2013/11/08/summary-of-cluster-analysis-distances/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Summary of Cluster Analysis Distances </h5>
+          <small>4 min</small>
+        </div>
+        <p class="mb-1">Cluster analysis is one of the most useful techniques in research and applications studies in a wide range of branches. It is also consider as a data reduction technique like principal components analysis (PCA), where instead of analyzing the variables, we analyze the profiles or registers. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Clustering</span>
+        
+      </a>
+      
+      <a href="/post/2013/06/21/datos-sin-estad%C3%ADstica/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Datos sin estadística </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">
+ “Los datos, sin estadística, no son más que ruido y confusión.”   “Data, without statistics, it is not more than noise and confusion.”   </p>
+        
+        
+      </a>
+      
+      <a href="/post/2013/06/17/c%C3%B3mo-actualizar-debian-7-wheezy/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> ¿Cómo actualizar Debian 7 Wheezy? </h5>
           <small>3 min</small>
         </div>
-        <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="mb-1">Debian 7 Wheezy es la última actualización estable de las distribución Debian en Linux. Hasta ahora me ha funcionado perfectamente y es por ello que deseo mostrar algunos pasos y sitios web que me funcionaron perfectamente para su actualización e instalaciones de programas que para mi caso son importantes. </p>
         
         
-        <span class="badge badge-light badge-pill text-secondary"> Markdown</span>
+        <span class="badge badge-light badge-pill text-secondary"> Debian</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Linux</span>
+        
+      </a>
+      
+      <a href="/post/2012/10/02/probabilidades-de-la-vida/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Probabilidades de la vida </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">Este capítulo de Redes para la ciencia nos muestra que las probabilidades están en los sucesos que vivimos día a día. Aunque existen ciertos errores con las probabilidades y los porcentajes presentados, es una manera muy interesante y entretenida de hablar de probabilidades con todo el mundo. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Probabilidades</span>
+        
+      </a>
+      
+      <a href="/post/2012/04/07/porqu%C3%A9-usar-la-media-arm%C3%B3nica/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> ¿Porqué usar la media armónica? </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">Recuerdo cuando llevé la clase de Estadística Descriptiva, y también la de Inferencia Paramétrica, nos presentaron estadísticos descriptivos como el promedio aritmético, geométrico y armónico. En ese instante no tenía ni la mas vaga idea de cuando utilizar el promedio armónico ya que al parecer, no podía interpretar, aquella fórmula, de una manera más comprensible o que de pistas de una interpretación clara tal como lo es el promedio aritmético. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Estadística Descriptivo</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Estadística Inferencial</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> promedio</span>
+        
+      </a>
+      
+      <a href="/post/2012/04/05/redes-para-la-ciencia-robots-para-saber-c%C3%B3mo-somos/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Redes para la ciencia: Robots para saber cómo somos </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">Otro capítulo maravilloso de Eduard Punset en Redes para la Ciencia:
+En donde Deb Roy (Ingeniero Informático del MIT) explica como realizó un estudio de investigación grabando a su hijo por 2 años, almacenando 300 Gb por día, para poder entender los factores principales que hacen que un niño aprenda a hablar y así poder implementar esta capacidad a un robot. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Deb Roy</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Eduard Punset</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Informática</span>
+        
+      </a>
+      
+      <a href="/post/2012/02/13/mapas-en-r-con-rgooglemaps/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Mapas en R con RgoogleMaps </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">Los mapas con el paquete RgoogleMaps se obtienen descargando los mapas desde Google Maps –valga la redundancia-, lo bueno es la interface gráfica con que se pueden presentar los mapas incluyendo las calles, centros de atracción, etc. Además la sintaxis para obtener el mapa es sencilla y pueden agregar objetos en la ubicación deseada según su latitud y longitud. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> mapa de lima</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Software R</span>
+        
+      </a>
+      
+      <a href="/post/2012/02/11/mapas-en-el-paquete-de-m%C3%A9todos-para-datos-espaciales-sp-en-r/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Mapas en el paquete de &#34;Métodos para datos espaciales&#34; (sp) en R </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">Para trabajar con este paquete podemos descargar la información georeferenciada de http://gadm.org/ de cualquier país, lo malo es que a mayor nivel de detalle tal como distritos existen discrepancias con la realidad. De todas maneras este paquete resulta interesante y útil a la hora de trabajar con datos georeferenciados y mucho más si son datos propios. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> mapa de lima</span>
+        
+        <span class="badge badge-light badge-pill text-secondary"> Software R</span>
+        
+      </a>
+      
+      <a href="/post/2011/12/23/teorema-del-l%C3%ADmite-central/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Teorema del Límite Central </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">El siguiente código en el software R nos brinda una forma sencilla para comprobar el teorema del límite central, explícitamente para verificar la distribución muestral de la media muestral. Como puede ver tiene distintas opciones de escoger la distribución, sin necesidad de asumir la normalidad, pero las variables \(x_i\) si deben ser independientes e identicamente distribuidas. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Estadística Inferencial</span>
+        
+      </a>
+      
+      <a href="/post/2011/12/22/redes-para-la-ciencia/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Redes para la ciencia </h5>
+          <small>1 min</small>
+        </div>
+        <p class="mb-1">Eduard Punset nació en Barcelona - España, es abogado, economista y comunicador científico. Se preocupa por transmitir el conocimiento científico de diversos aspectos de nuestras vidas a las personas no muy dedicadas a la ciencia ayudandonos a entender diversas situaciones del día a día a través de explicaciones científicas. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Ciencia</span>
+        
+      </a>
+      
+      <a href="/post/2011/12/22/ejemplo-inicial-de-grados-de-libertad/" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1 text-primary"> Ejemplo inicial de grados de libertad </h5>
+          <small>2 min</small>
+        </div>
+        <p class="mb-1">Para los estadísticos o ingenieros estadísticos el término de “grados de libertad” es muy conocido, incluso en la mayoría de los libros de estadística y probabilidad es muy utilizado pero no dejan un concepto claro sobre el mismo, siendo uno de los más conocidos “el número de variables menos el número de parámetros a estimar”. </p>
+        
+        
+        <span class="badge badge-light badge-pill text-secondary"> Estadística Inferencial</span>
         
       </a>
       

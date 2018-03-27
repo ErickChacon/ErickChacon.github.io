@@ -1,0 +1,247 @@
+
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/basic.css" />
+  
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    "HTML-CSS": { scale: 90}
+  });
+</script>
+  
+  <title>Upgrade Debian Wheezy to Debian Jessie - Erick Chacon</title>
+  <meta name="author" content="">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=" /">
+          <i class='fa fa-bar-chart'></i>
+          Erick Chacon
+        </a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+          <ul class="navbar-nav ml-auto">
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/"> Research</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/software/"> Software</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post/"> Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/erick-chacon-cv.pdf"> CV</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Statistical Issues</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                
+                <a class="dropdown-item" href="/statistics/"> Statistics</a>
+                
+                <a class="dropdown-item" href="/inference/"> Inference</a>
+                
+                <a class="dropdown-item" href="/modelling/"> Modelling</a>
+                
+                <a class="dropdown-item" href="/programming/"> Programming</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+<style type="text/css" media="screen">
+body {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+</style>
+
+
+<div class="container">
+
+  <h1 class = "text-center"> Upgrade Debian Wheezy to Debian Jessie </h1>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
+      <p>
+In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package <code>lib6</code>. A reliable solution was to upgrade my system to <strong>Jessie</strong>, the current stable distribution of Debian. Its latest update, Debian 8.1, was released on 6th of June, 2015.
+</p>
+<p>
+For this reason, I share, in this post, the steps I followed for upgrading my system keeping user configuration and the main programs I use such as R, RStudio, Matlab, Mendeley, TeXstudio and others.
+</p>
+<p>
+<strong>0) Backup your data:</strong> This is a logical initial step before starting any change on the system.
+</p>
+<p>
+<strong>1) Upgrading to Debian Jessie:</strong>
+</p>
+<p style="padding-left:0px;">
+<strong>1.1) Prepare Debian Wheezy to be upgrading:</strong> Be sure that your current system does not have any problem of dependency or wrong installed packages. You can use the following commands for that purpose:
+</p>
+<pre class="bash"><code># Login like super user and write your password
+su -
+# Prepare your system
+aptitude update
+aptitude upgrade
+aptitude dist-upgrade</code></pre>
+<p style="padding-left:0px;">
+<strong>1.2) Update the repositories list: </strong> Packages for Debian Jessie is downloaded from these repositories. One way to update this list is to modify the file <code>/etc/apt/sources.list</code>, I use <code>gedit</code> for that:
+</p>
+<pre class="bash"><code>gedit /etc/apt/sources.list &quot;hs&quot;</code></pre>
+<p style="padding-left:0px;">
+In my case, I put the following repositories:
+</p>
+<pre class="bash"><code># Basic repositories
+deb http://ftp.uk.debian.org/debian/ jessie main
+deb-src http://ftp.uk.debian.org/debian/ jessie main
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+# Repositories for jessie-updates, previously known as &#39;volatile&#39;
+deb http://ftp.uk.debian.org/debian/ jessie-updates main
+deb-src http://ftp.uk.debian.org/debian/ jessie-updates main
+# For wifi drivers
+deb http://http.debian.net/debian/ jessie main contrib non-free
+# For R backports: The mirror can be modified
+deb http://cran.ma.imperial.ac.uk/bin/linux/debian jessie-cran3/
+# For Flash Player
+deb http://ftp.us.debian.org/debian jessie contrib</code></pre>
+<p style="padding-left:0px;">
+Another option is to change the wheezy word by jessie word automatically with the <code>sed</code> function.
+</p>
+<pre class="bash"><code>sed -i &#39;s/wheezy/jessie/g&#39; /etc/apt/sources.list</code></pre>
+<p style="padding-left:0px;">
+<strong>1.3) Update the packages of Debian 8.1 Jessie</strong>.
+</p>
+<pre class="bash"><code>apt-get update
+apt-get upgrade
+apt-get dist-upgrade</code></pre>
+<p style="padding-left:0px;">
+During the upgrade it will ask if you want to restart manually or automatically some currently running services. It is suggested to make it manually.
+</p>
+<p style="padding-left:0px;">
+Furthermore, after upgrading the distribution, I had to choose the device where <code>grub</code> should be installed. If it this your case, you should select the <code>/dev/sda</code> device if your pc has only one disk (use <code>spacebar</code> to choose the device). Otherwise, use the following link <a href="http://askubuntu.com/questions/23418/what-do-i-select-for-grub-install-devices-after-an-update" class="uri">http://askubuntu.com/questions/23418/what-do-i-select-for-grub-install-devices-after-an-update</a>.
+</p>
+<p style="padding-left:0px;">
+<strong>1.5) Finally, reboot your computer to get the Debian Jessie system and enjoy. </strong>
+</p>
+<pre class="bash"><code>reboot</code></pre>
+<!-- <p><a href="https://statisticalissues.files.wordpress.com/2015/06/jessie.png"><img src="{{ site.baseurl }}/assets/jessie.png?w=662" alt="Debian Jessie" width="662" height="372" class="aligncenter size&#45;large wp&#45;image&#45;562" /></a></p> -->
+<img src="/images/jessie.png" alt="jessie">
+<p>
+<strong>2) Useful links to install programs:</strong>
+</p>
+<p style="padding-left:0px;">
+<strong>2.1) Software R:</strong> <a href="http://cran.r-project.org/bin/linux/debian/">http://cran.r-project.org/bin/linux/debian/</a>
+</p>
+<p style="padding-left:0px;">
+<strong>2.2) IDE Rstudio:</strong> <a href="http://cran.r-project.org/bin/linux/debian/">http://www.rstudio.com/ide/download/desktop</a>
+</p>
+<p style="padding-left:0px;">
+<strong>2.3) Texstudio:</strong> <a href="http://cran.r-project.org/bin/linux/debian/">http://packages.debian.org/jessie/texstudio</a>
+</p>
+<p style="padding-left:0px;">
+<strong>2.4) Mendeley Desktop (Gestor de bibliografías):</strong> <a href="http://cran.r-project.org/bin/linux/debian/">http://www.mendeley.com/</a>
+</p>
+<p style="padding-left:0px;">
+<strong>2.5) Dropbox:</strong> <a href="http://cran.r-project.org/bin/linux/debian/">https://www.dropbox.com/</a>
+</p>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<footer class="footer bg-light fixed-bottom text-muted">
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    
+    <a href = "mailto:eral.th07@email.com" class="btn btn-social-icon btn-lg btn-envelope">
+      <i class="fa fa-envelope"></i></a>
+    
+    <a href = "https://github.com/ErickChacon" class="btn btn-social-icon btn-lg btn-github">
+      <i class="fa fa-github"></i></a>
+    
+    <a href = "https://www.linkedin.com/in/erick-chacon-montalvan-7bba9141" class="btn btn-social-icon btn-lg btn-linkedin">
+      <i class="fa fa-linkedin"></i></a>
+    
+    <a href = "https://twitter.com/eralfe" class="btn btn-social-icon btn-lg btn-twitter">
+      <i class="fa fa-twitter"></i></a>
+    
+  </div>
+  <div class="col-md-6">
+    <div class='float-vertical-align'>
+      <small>
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Boostrap</a>
+        
+      </small>
+    </div>
+  </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

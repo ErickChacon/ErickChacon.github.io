@@ -1,0 +1,259 @@
+
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/basic.css" />
+  
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    "HTML-CSS": { scale: 90}
+  });
+</script>
+  
+  <title>Summary of Cluster Analysis Distances - Erick Chacon</title>
+  <meta name="author" content="">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href=" /">
+          <i class='fa fa-bar-chart'></i>
+          Erick Chacon
+        </a>
+        <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar9">
+          <ul class="navbar-nav ml-auto">
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/research/"> Research</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/software/"> Software</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post/"> Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/erick-chacon-cv.pdf"> CV</a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Statistical Issues</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                
+                <a class="dropdown-item" href="/statistics/"> Statistics</a>
+                
+                <a class="dropdown-item" href="/inference/"> Inference</a>
+                
+                <a class="dropdown-item" href="/modelling/"> Modelling</a>
+                
+                <a class="dropdown-item" href="/programming/"> Programming</a>
+                
+              </div>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+<style type="text/css" media="screen">
+body {
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+</style>
+
+
+<div class="container">
+
+  <h1 class = "text-center"> Summary of Cluster Analysis Distances </h1>
+
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
+      <p style="text-align:justify;">
+Cluster analysis is one of the most useful techniques in research and applications studies in a wide range of branches. It is also consider as a data reduction technique like principal components analysis (PCA), where instead of analyzing the variables, we analyze the profiles or registers. The starting point of the cluster analysis is proximity matrix that measure the similarity between objects because this is the most important concept to build clusters.
+</p>
+<p style="text-align:justify;">
+I am not going to give a full theory of this technique, but rather I want to make some descriptions of the kind of distances that can be considered to measure the similarity or dissimilarity between objects. There are several softwares that can performance cluster analysis including Matlab and R (I mention these two because the quantity of users that they have) and we have the question of what distance I should consider to develop my analysis; principally people whom are not much familiarity with a deep theory of statistics or maths, so let’s go.
+</p>
+<p style="text-align:justify;">
+The proximity between objects could be analyze trough similarity or dissimilarity measures. A common example of similarity is the Pearson correlation coefficient while the Euclidean distance is a common dissimilarity measure.
+</p>
+<p>
+<strong>Dissimilarity</strong>
+</p>
+<p style="text-align:justify;">
+Considering two objects <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, <span class="math inline">\(p_{rs}\)</span> is a dissimilarity measure if the values are greater or equal than 0, <span class="math inline">\(p_{rs}=0\)</span> when the two objects are identical and <span class="math inline">\(p_{rs}=p_{sr}\)</span>.
+</p>
+<ul>
+<li>
+Euclidian Distance:
+</li>
+<p style="text-align:justify;">
+This distance is the most common in cluster analysis because it measures the geometric distance between two points in a n-dimensional space. It means that we can see if two points are near or far away in the geometric space. There is no difference if it is apply in a centered or non-centered variable. It is well used when the analyzed variables were measured under the same scale or there are no big differences between its scales. This distance is expressed as follow:
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(d_{rs}^2=\sum_{j=1}^p (x_{rj}-x_{sj})^2\)</span>
+</p>
+<li>
+Standardized Euclidian Distance:
+</li>
+<p style="text-align:justify;">
+When the variables have different scales of measure, the euclidian distance is not a good dissimilarity index because it can be highly influenced by the variable with greatest scale. In this situation, the Standardized Euclidian Distance is a good alternative. As you see, this distance is similar to the euclidian distance but with weights to each variable.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(d_{rs}^2=\sum_{j=1}^p \frac{(x_{rj}-x_{sj})^2}{s_j^2}=(x_r-x_s)&#39;D^{-1}(x_r-x_s)\)</span>
+</p>
+<li>
+Mahalanobis Distance:
+</li>
+<p style="text-align:justify;">
+It takes in consideration the difference in variance between features and their covariance structure. This distance is equivalent to applying the euclidian distance to the full principal components matrix.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(d_{rs}^2=(x_r-x_s)&#39;S^{-1}(x_r-x_s)\)</span>
+</p>
+<p style="text-align:justify;">
+You can note that this distance delete the covariance structure. That makes it non adequate in some occasions where the correlation is very important in the distance.
+</p>
+<li>
+Manhattan or City Block Metric:
+</li>
+<p style="text-align:justify;">
+This distance is based in the sum of the absolute values of the differences among the coordinates. In this metric, a constant difference between each of the p coordinates in the amount <span class="math inline">\(a\)</span> has the same effect on total distance as changing the difference in only one coordinate by the amount <span class="math inline">\(pa\)</span>. That is not true for the Euclidian distance. It happens because; for example, <span class="math inline">\(5^2 + 5^2 \neq (5 + 5)^2\)</span>. Furthermore, it is much less sensitive to the presence of outliers.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(b_{rs}=\sum_{j=1}^p |x_{rj}-x_{sj}|\)</span>
+</p>
+<li>
+Minkowski Metric:
+</li>
+<p style="text-align:justify;">
+The Minkowski metric is a more general distance that covers some of the distances presented above. When <span class="math inline">\(\lambda=2\)</span>, it is the euclidian distance and is the Manhattan distance when <span class="math inline">\(\lambda=1\)</span>. It is always true that <span class="math inline">\(m_{rs} \leq m_{rm}+p_{ms}\)</span>.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(m_{rs}=\left[\sum_{j=1}^p |x_{rj}-x_{sj}|^\lambda\right]^{1/\lambda}\)</span>
+</p>
+</ul>
+<p>
+<strong>Similarity</strong>
+</p>
+<p style="text-align:justify;">
+Considering two objects <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, <span class="math inline">\(p_{rs}\)</span> is a similarity measure if the range of values is between [0-1], <span class="math inline">\(p_{rs}= 1\)</span> when the two objects are identical and <span class="math inline">\(p_{rs}=p_{sr}\)</span>.
+</p>
+<ul>
+<li>
+Cosine:
+</li>
+<p style="text-align:justify;">
+In Multivariate Analysis, the cosine of the angle between two vectors is used as a kind of measurement of similarity. It only consider the direction of the two vectors and does not depend of the length of the vectors. This kind of measure is useful when you want to evaluate the structure of the profiles.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(c_{rs}=\sum_{j=1}^p x_{rj}x_{sj}/\sqrt{\sum_{j=1}^p x_{rj}^2 \sum_{j=1}^p x_{sj}^2}\)</span>
+</p>
+<li>
+Correlation coefficient:
+</li>
+<p style="text-align:justify;">
+When the cosine is calculated to the centralized variable, it is known as the Pearson Correlation Coefficient.
+</p>
+<p style="text-align:center;">
+<span class="math inline">\(q_{rs}=\sum_{j=1}^p (x_{rj}-\overline{x}_{r.})(x_{sj}-\overline{x}_{s.})/\sqrt{\sum_{j=1}^p (x_{rj}-\overline{x}_{r.})^2 \sum_{j=1}^p (x_{sj}-\overline{x}_{s.})^2}\)</span>
+</p>
+</ul>
+<p style="text-align:justify;">
+For more information, you can check the book of J. D. Jobson, “Applied Multivariate Data Analysis: Volume II”. I hope this information will be useful for you.
+</p>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<footer class="footer bg-light fixed-bottom text-muted">
+<div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    
+    <a href = "mailto:eral.th07@email.com" class="btn btn-social-icon btn-lg btn-envelope">
+      <i class="fa fa-envelope"></i></a>
+    
+    <a href = "https://github.com/ErickChacon" class="btn btn-social-icon btn-lg btn-github">
+      <i class="fa fa-github"></i></a>
+    
+    <a href = "https://www.linkedin.com/in/erick-chacon-montalvan-7bba9141" class="btn btn-social-icon btn-lg btn-linkedin">
+      <i class="fa fa-linkedin"></i></a>
+    
+    <a href = "https://twitter.com/eralfe" class="btn btn-social-icon btn-lg btn-twitter">
+      <i class="fa fa-twitter"></i></a>
+    
+  </div>
+  <div class="col-md-6">
+    <div class='float-vertical-align'>
+      <small>
+        
+        Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Boostrap</a>
+        
+      </small>
+    </div>
+  </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

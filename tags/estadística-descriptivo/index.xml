@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Estadística Descriptivo on Erick Chacon</title>
+    <link>/tags/estad%C3%ADstica-descriptivo/</link>
+    <description>Recent content in Estadística Descriptivo on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Apr 2012 20:55:38 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/estad%C3%ADstica-descriptivo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>¿Porqué usar la media armónica?</title>
+      <link>/post/2012/04/07/porqu%C3%A9-usar-la-media-arm%C3%B3nica/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
+      
+      <guid>/post/2012/04/07/porqu%C3%A9-usar-la-media-arm%C3%B3nica/</guid>
+      <description>Recuerdo cuando llevé la clase de Estadística Descriptiva, y también la de Inferencia Paramétrica, nos presentaron estadísticos descriptivos como el promedio aritmético, geométrico y armónico. En ese instante no tenía ni la mas vaga idea de cuando utilizar el promedio armónico ya que al parecer, no podía interpretar, aquella fórmula, de una manera más comprensible o que de pistas de una interpretación clara tal como lo es el promedio aritmético.</description>
+    </item>
+    
+  </channel>
+</rss>

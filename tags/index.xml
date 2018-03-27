@@ -21,11 +21,155 @@
     </item>
     
     <item>
+      <title>Ciencia</title>
+      <link>/tags/ciencia/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/ciencia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>/tags/clustering/</link>
+      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
+      
+      <guid>/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Visualization</title>
+      <link>/tags/data-visualization/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/data-visualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deb Roy</title>
+      <link>/tags/deb-roy/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      
+      <guid>/tags/deb-roy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>/tags/debian/</link>
+      <pubDate>Mon, 17 Jun 2013 23:37:02 +0100</pubDate>
+      
+      <guid>/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eduard Punset</title>
+      <link>/tags/eduard-punset/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      
+      <guid>/tags/eduard-punset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>/tags/education/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eps image</title>
+      <link>/tags/eps-image/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/eps-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estadística Descriptivo</title>
+      <link>/tags/estad%C3%ADstica-descriptivo/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
+      
+      <guid>/tags/estad%C3%ADstica-descriptivo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estadística Inferencial</title>
+      <link>/tags/estad%C3%ADstica-inferencial/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
+      
+      <guid>/tags/estad%C3%ADstica-inferencial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Four</title>
       <link>/tags/four/</link>
       <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
       
       <guid>/tags/four/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Informática</title>
+      <link>/tags/inform%C3%A1tica/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/tags/inform%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>/tags/latex/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MOOC</title>
+      <link>/tags/mooc/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/tags/mooc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mapa de lima</title>
+      <link>/tags/mapa-de-lima/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/mapa-de-lima/</guid>
       <description></description>
     </item>
     
@@ -48,6 +192,15 @@
     </item>
     
     <item>
+      <title>Matlab</title>
+      <link>/tags/matlab/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pandoc</title>
       <link>/tags/pandoc/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
@@ -62,6 +215,42 @@
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilidades</title>
+      <link>/tags/probabilidades/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
+      
+      <guid>/tags/probabilidades/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Promedio</title>
+      <link>/tags/promedio/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
+      
+      <guid>/tags/promedio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
@@ -93,6 +282,33 @@
     </item>
     
     <item>
+      <title>Scientific Writing</title>
+      <link>/tags/scientific-writing/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/scientific-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software R</title>
+      <link>/tags/software-r/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/software-r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thesis</title>
+      <link>/tags/thesis/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Three</title>
       <link>/tags/three/</link>
       <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
@@ -102,11 +318,29 @@
     </item>
     
     <item>
+      <title>Tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Two</title>
       <link>/tags/two/</link>
       <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
       
       <guid>/tags/two/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universidad Nacional de Ingeniería</title>
+      <link>/tags/universidad-nacional-de-ingenier%C3%ADa/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/universidad-nacional-de-ingenier%C3%ADa/</guid>
       <description></description>
     </item>
     
