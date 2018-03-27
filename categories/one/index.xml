@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>One on Erick Chacon</title>
+    <link>/categories/one/</link>
+    <description>Recent content in One on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2017 15:26:23 -0600</lastBuildDate>
+    
+	<atom:link href="/categories/one/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home</title>
+      <link>/</link>
+      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
+      
+      <guid>/</guid>
+      <description>This is my personal webpage and blog. I am a PhD student in Statistics and Epidemiology in the Faculty of Health and Medicine at Lancaster University supervised by Dr. Benjamin Taylor and Dr. Luke Parry. I work in the research group called CHICAS (Centre for Health, Informatics, Computing and Statistics).</description>
+    </item>
+    
+  </channel>
+</rss>
