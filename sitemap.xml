@@ -13,13 +13,33 @@
   </url>
   
   <url>
+    <loc>/software/r/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/software/latex/research-notes/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/software/markdown/simpledown/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/latex/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/software/latex/simple-notes/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/markdown/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,11 +78,6 @@
   </url>
   
   <url>
-    <loc>/software/latex/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/inference/basics/a/</loc>
     <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
@@ -73,27 +88,12 @@
   </url>
   
   <url>
-    <loc>/software/markdown/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/inference/basics/</loc>
     <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/programming/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/python/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/r/</loc>
     <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -148,6 +148,16 @@
   </url>
   
   <url>
+    <loc>/software/r/datasim/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/r/day2day/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/inference/basics/b/001-intro/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
@@ -188,37 +198,12 @@
   </url>
   
   <url>
-    <loc>/software/markdown/2016-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/markdown/2017-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/python/2016-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/python/2017-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/r/2016-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/r/2017-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/inference/basics/a/001-intro/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/r/mbspi/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -234,21 +219,6 @@
   
   <url>
     <loc>/software/2015-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/markdown/2015-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/python/2015-07-23-lorem-ipsum/</loc>
-    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/software/r/2015-07-23-lorem-ipsum/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -657,6 +627,12 @@
   <url>
     <loc>/categories/scientific-writing/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/simulation/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

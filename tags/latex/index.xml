@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>SimpleDown Pandoc Template</title>
+      <link>/software/markdown/simpledown/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/markdown/simpledown/</guid>
+      <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
+    </item>
+    
+    <item>
       <title>UniThesis LaTex class</title>
       <link>/software/latex/uni-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
