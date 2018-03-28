@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Latex classes on Erick Chacon</title>
+    <title>Latex Class on Erick Chacon</title>
     <link>/software/latex/</link>
-    <description>Recent content in Latex classes on Erick Chacon</description>
+    <description>Recent content in Latex Class on Erick Chacon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>ResearchNotes class</title>
+      <title>Fancy Class for Scientific Reports</title>
       <link>/software/latex/research-notes/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>ResearchNotes class</title>
+      <title>Simple Class for Scientific Reports</title>
       <link>/software/latex/simple-notes/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -30,7 +30,7 @@
     </item>
     
     <item>
-      <title>UniThesis LaTex class</title>
+      <title>Thesis Class for National University of Engineering</title>
       <link>/software/latex/uni-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       

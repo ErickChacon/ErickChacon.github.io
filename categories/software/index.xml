@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Fancy Class for Scientific Reports</title>
+      <link>/software/latex/research-notes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/research-notes/</guid>
+      <description>ReasearchNotes is a LaTex class that provides a nice template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. Compatible with SimpleNotes class.</description>
+    </item>
+    
+    <item>
       <title>LancsThesis LaTex Class</title>
       <link>/software/latex/lancs-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
@@ -21,16 +30,7 @@
     </item>
     
     <item>
-      <title>ResearchNotes class</title>
-      <link>/software/latex/research-notes/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/research-notes/</guid>
-      <description>ReasearchNotes is a LaTex class that provides a nice template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. Compatible with SimpleNotes class.</description>
-    </item>
-    
-    <item>
-      <title>ResearchNotes class</title>
+      <title>Simple Class for Scientific Reports</title>
       <link>/software/latex/simple-notes/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>SimpleDown Pandoc Template</title>
+      <title>Simple Integration Between Markdown and Latex</title>
       <link>/software/markdown/simpledown/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -48,7 +48,7 @@
     </item>
     
     <item>
-      <title>UniThesis LaTex class</title>
+      <title>Thesis Class for National University of Engineering</title>
       <link>/software/latex/uni-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       

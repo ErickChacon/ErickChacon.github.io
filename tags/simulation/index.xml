@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Data Simulation Based on Models Formulas (datasim)</title>
+      <title>Data Simulation Based on Models Formulas</title>
       <link>/software/r/datasim/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>Functions for Day-to-Day Data Analysis (day2day)</title>
+      <title>Functions for Day-to-Day Data Analysis</title>
       <link>/software/r/day2day/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
@@ -30,12 +30,12 @@
     </item>
     
     <item>
-      <title>Model-based Standardized Precipitation Index (mbspi)</title>
+      <title>Model-based Standardized Precipitation Index</title>
       <link>/software/r/mbspi/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/software/r/mbspi/</guid>
-      <description>The mbsi package provide tools to compute and visualize extreme hydro-climatic events using the standardized precipitation index (SPI) and the model-based standardized index (MBSI). The difference with between the MBSPI and the classical SPI index is that it consider the association between continuous times using cycle P-splines ‘pbc’.</description>
+      <description>Provide tools to compute and visualize extreme hydro-climatic events using the standardized precipitation index (SPI) and the model-based standardized index (MBSI). The package can also with work with precipitation series containing missing values (NA), \(0\) or only non-zero values.</description>
     </item>
     
   </channel>
