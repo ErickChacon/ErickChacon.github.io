@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Presentations on Erick Chacon</title>
-    <link>/research/talks/</link>
-    <description>Recent content in Presentations on Erick Chacon</description>
+    <title>Gamlss on Erick Chacon</title>
+    <link>/categories/gamlss/</link>
+    <description>Recent content in Gamlss on Erick Chacon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/research/talks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/gamlss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,24 +18,6 @@
       
       <guid>/research/talks/2017-12-cmsstatistics/</guid>
       <description>Newborn weight is used as an indicator of population health because it is related to long-term outcomes in education, income and disability. There are a number of existing studies that have been conducted to identify the major determinants of birth weight; in our study, we consider how the environment can impact on newborn health outcomes.</description>
-    </item>
-    
-    <item>
-      <title>Generalized Additive Models for Location, Scale and Shape</title>
-      <link>/research/talks/2017-10-cipefa/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/talks/2017-10-cipefa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spatio-Temporal Models in Epidemiology</title>
-      <link>/research/talks/2017-10-cipefa-mini/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/research/talks/2017-10-cipefa-mini/</guid>
-      <description></description>
     </item>
     
   </channel>

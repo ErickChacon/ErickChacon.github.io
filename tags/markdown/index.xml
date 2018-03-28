@@ -12,6 +12,15 @@
     
     
     <item>
+      <title></title>
+      <link>/research/writing/2014b-chacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/writing/2014b-chacon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fancy Class for Scientific Reports</title>
       <link>/software/latex/research-notes/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
@@ -21,21 +30,39 @@
     </item>
     
     <item>
-      <title>Simple Class for Scientific Reports</title>
-      <link>/software/latex/simple-notes/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/simple-notes/</guid>
-      <description>SimpleNotes is a LaTex class that provides a simple template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. It is compatible with ResearchNotes class.</description>
-    </item>
-    
-    <item>
       <title>Simple Integration Between Markdown and Latex</title>
       <link>/software/markdown/simpledown/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/software/markdown/simpledown/</guid>
       <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/research/writing/2014-chacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/writing/2014-chacon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/research/writing/2015-chacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/research/writing/2015-chacon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simple Class for Scientific Reports</title>
+      <link>/software/latex/simple-notes/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/simple-notes/</guid>
+      <description>SimpleNotes is a LaTex class that provides a simple template for scientific notes and reports. You can also use it for lecture notes, tutorial, labs or as you want to use. It is compatible with ResearchNotes class.</description>
     </item>
     
     <item>
@@ -76,65 +103,11 @@
     </item>
     
     <item>
-      <title>Lorem Ipsum</title>
-      <link>/research/talks/2016-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/talks/2016-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/research/talks/2017-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/talks/2017-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/research/writing/2016-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/writing/2016-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/research/writing/2017-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/writing/2017-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
       <title>Maximum Likelihood Inference</title>
       <link>/inference/basics/a/001-intro/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/inference/basics/a/001-intro/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>first project</title>
-      <link>/research/talks/2015-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/talks/2015-07-23-lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
-    </item>
-    
-    <item>
-      <title>first project</title>
-      <link>/research/writing/2015-07-23-lorem-ipsum/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/research/writing/2015-07-23-lorem-ipsum/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
     </item>
     
