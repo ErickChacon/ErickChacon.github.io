@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Visualization on Erick Chacon</title>
+    <title>Data visualization on Erick Chacon</title>
     <link>/categories/data-visualization/</link>
-    <description>Recent content in Data Visualization on Erick Chacon</description>
+    <description>Recent content in Data visualization on Erick Chacon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jan 2014 23:27:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Apr 2017 23:27:59 +0100</lastBuildDate>
     
 	<atom:link href="/categories/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Print eps figure with accent in matlab</title>
-      <link>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</link>
-      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      <title>Visualizing extreme events with ggplot2</title>
+      <link>/post/2017/04/22/visualizing-extreme-events-with-ggplot2/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
       
-      <guid>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</guid>
-      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations. We usually add text in the image as the axis labels, titles or texts in certain positions.</description>
+      <guid>/post/2017/04/22/visualizing-extreme-events-with-ggplot2/</guid>
+      <description>When working with time series, sometimes, it is desired to highlight some events with some particular pattern.
+For example, highlight periods of time where the variable on interest exceed certain threshold or conversely. With this in mind, I extended an stat of ggplot2 to allow easy visualization of those events.</description>
     </item>
     
   </channel>
