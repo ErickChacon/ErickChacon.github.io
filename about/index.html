@@ -89,6 +89,8 @@
                 
                 <a class="dropdown-item" href="/programming/"> Programming</a>
                 
+                <a class="dropdown-item" href="/mathematics/"> Mathematics</a>
+                
               </div>
             </li>
             
@@ -111,7 +113,7 @@ body {
 
 <div class="container">
 
-  <h1 class = "text-center"> About Hugo XMin </h1>
+  <h2 class = "text-center"> About Hugo XMin </h2>
 
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
@@ -164,11 +166,14 @@ body {
 <h1 id="custom-layouts">Custom layouts</h1>
 
 <p>There are two layout files under <code>layouts/partials/</code> that you may want to override: <code>head_custom.html</code> and <code>foot_custom.html</code>. This is how you inject arbitrary HTML code to the head and foot areas. For example, this site has a file <code>layouts/partials/foot_custom.html</code> to support LaTeX math via MathJax and center images automatically:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//yihui.name/js/math-code.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&#34;</span>&gt;
-&lt;/<span style="color:#f92672">script</span>&gt;
 
-&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">async</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;//yihui.name/js/center-img.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;</code></pre></div>
+<pre><code class="language-html">&lt;script src=&quot;//yihui.name/js/math-code.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;
+&lt;/script&gt;
+
+&lt;script async src=&quot;//yihui.name/js/center-img.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
 <p>You can certainly enable highlight.js for syntax highlighting by yourself through <code>head_custom.html</code> and <code>foot_custom.html</code> if you want.</p>
 
 <p>If you do not like the default fonts (e.g., <code>Palatino</code>), you may provide your own <code>static/css/fonts.css</code> under the root directory of your website to override the <code>fonts.css</code> in the theme.</p>

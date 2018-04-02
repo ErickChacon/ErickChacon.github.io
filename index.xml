@@ -111,6 +111,26 @@
     </item>
     
     <item>
+      <title>Eigenvalues and Eigenvectors</title>
+      <link>/mathematics/linear-algebra/20-eigenvalues/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/mathematics/linear-algebra/20-eigenvalues/</guid>
+      <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
+Eigenvectors The eigenvector of a linear transformation \(A\) is a non-zero vector \(v\) such us the linear transformation of it is proportional to itself: \(Av = \lambda v\)</description>
+    </item>
+    
+    <item>
+      <title>Linear Transformation and Change of Basis</title>
+      <link>/mathematics/linear-algebra/10-linear-algebra-stats/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/mathematics/linear-algebra/10-linear-algebra-stats/</guid>
+      <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
+Linear Transformation Letting \(V\) and \(W\) be vector spaces, a function \(f: V \rightarrow W\) is a linear transformation if the additivity and scalar multiplication properties are hold for any two vectors \({\mathbf{u}}, {\mathbf{v}} \in V\) and a constant \(c\): \[f({\mathbf{u}}+{\mathbf{v}}) = f({\mathbf{u}}) + f({\mathbf{v}})\] \[f(c{\mathbf{v}}) = cf({\mathbf{v}}).</description>
+    </item>
+    
+    <item>
       <title>Spatio-temporal Models to Evaluate the Effect of Extreme Hydro-climatic Events on Birth Weight</title>
       <link>/research/talks/2017-12-cmsstatistics/</link>
       <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
@@ -368,6 +388,24 @@ En donde Deb Roy (Ingeniero Informático del MIT) explica como realizó un estud
       
       <guid>/post/2011/12/22/ejemplo-inicial-de-grados-de-libertad/</guid>
       <description>Para los estadísticos o ingenieros estadísticos el término de “grados de libertad” es muy conocido, incluso en la mayoría de los libros de estadística y probabilidad es muy utilizado pero no dejan un concepto claro sobre el mismo, siendo uno de los más conocidos “el número de variables menos el número de parámetros a estimar”.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/latex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/latex/</guid>
+      <description>\newcommand{\real}{\mathbb{R}}</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/wiki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/</guid>
+      <description>Statistical Issues Index Introduction to Statistics  Probability Likelihood Confidence Intervals Statistical Methods Classic Statistics Bayesian statistics Comparing classic and Bayesian statistics Causality, Confounding  Statistical Inference  Classical Inference Techniques  Maximum likelihood estimation Expectation maximization Iteratively reweighted least squares Restricted maximum likelihood estimation  Bayesian Inference Techniques  Rejection sampling Importance sampling Markov chain Monte Carlo Gibbs sampling Metropolis Hasting Laplace Approximation Integrated nested Laplace approximation Variational Bayes   Modelling  Introduction to Modelling  Classical statistics Bayesian statistics Comparing classical and Bayesian statistics  Common Models  Linear Gaussian models Generalized linear models Mixed-effects models Additive models Quantile Regression  Spatio-temporal Models  Based-model geostatistics Low-rank models Nearest neighbor Gaussian process Dynamic models Dynamic linear models  More General Models  Location, scale and shape models Structured additive regression models   Computational Methods Mathematics  Linear Algebra  Basic linear algebra concepts for statistics   Programming Blog See which plugin has set the mapping gf.</description>
     </item>
     
     <item>
