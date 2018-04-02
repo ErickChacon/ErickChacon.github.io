@@ -17,16 +17,15 @@
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/mathematics/linear-algebra/20-eigenvalues/</guid>
-      <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
-Eigenvectors The eigenvector of a linear transformation \(A\) is a non-zero vector \(v\) such us the linear transformation of it is proportional to itself: \(Av = \lambda v\)</description>
+      <description>Eigenvalues and eigenvectors are used in several concepts of statistical inference and modelling. It can be useful for dimension reduction, decomposition of variance-covariance matrices, so on. For this reason, we provide basic details about eigenvectors and eigenvalues and their close relationship with linear transformations.</description>
     </item>
     
     <item>
       <title>Linear Transformation and Change of Basis</title>
-      <link>/mathematics/linear-algebra/10-linear-algebra-stats/</link>
+      <link>/mathematics/linear-algebra/10-linear-transformation/</link>
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/mathematics/linear-algebra/10-linear-algebra-stats/</guid>
+      <guid>/mathematics/linear-algebra/10-linear-transformation/</guid>
       <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
 Linear Transformation Letting \(V\) and \(W\) be vector spaces, a function \(f: V \rightarrow W\) is a linear transformation if the additivity and scalar multiplication properties are hold for any two vectors \({\mathbf{u}}, {\mathbf{v}} \in V\) and a constant \(c\): \[f({\mathbf{u}}+{\mathbf{v}}) = f({\mathbf{u}}) + f({\mathbf{v}})\] \[f(c{\mathbf{v}}) = cf({\mathbf{v}}).</description>
     </item>
