@@ -80,11 +80,6 @@
   </url>
   
   <url>
-    <loc>/software/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/inference/intermadiate/</loc>
     <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
@@ -121,6 +116,11 @@
   
   <url>
     <loc>/research/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/software/</loc>
     <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -323,13 +323,19 @@
   </url>
   
   <url>
-    <loc>/tags/ciencia/</loc>
-    <lastmod>2014-09-18T01:31:17+01:00</lastmod>
+    <loc>/tags/change-of-basis/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/ciencia/</loc>
+    <lastmod>2014-09-18T01:31:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ciencia/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -353,13 +359,13 @@
   </url>
   
   <url>
-    <loc>/tags/data-visualization/</loc>
+    <loc>/categories/data-visualization/</loc>
     <lastmod>2014-01-17T23:27:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/data-visualization/</loc>
+    <loc>/tags/data-visualization/</loc>
     <lastmod>2014-01-17T23:27:23+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -377,14 +383,14 @@
   </url>
   
   <url>
-    <loc>/tags/debian/</loc>
-    <lastmod>2013-06-17T23:37:02+01:00</lastmod>
+    <loc>/categories/debian/</loc>
+    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/debian/</loc>
-    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <loc>/tags/debian/</loc>
+    <lastmod>2013-06-17T23:37:02+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -395,13 +401,13 @@
   </url>
   
   <url>
-    <loc>/tags/education/</loc>
+    <loc>/categories/education/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/education/</loc>
+    <loc>/tags/education/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -431,13 +437,13 @@
   </url>
   
   <url>
-    <loc>/tags/estad%C3%ADstica-inferencial/</loc>
+    <loc>/categories/estad%C3%ADstica-inferencial/</loc>
     <lastmod>2012-04-07T20:55:38+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/estad%C3%ADstica-inferencial/</loc>
+    <loc>/tags/estad%C3%ADstica-inferencial/</loc>
     <lastmod>2012-04-07T20:55:38+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -479,20 +485,14 @@
   </url>
   
   <url>
-    <loc>/tags/inform%C3%A1tica/</loc>
-    <lastmod>2014-07-19T11:51:06+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/inform%C3%A1tica/</loc>
     <lastmod>2014-07-19T11:51:06+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/latex/</loc>
-    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <loc>/tags/inform%C3%A1tica/</loc>
+    <lastmod>2014-07-19T11:51:06+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -504,13 +504,19 @@
   
   <url>
     <loc>/tags/latex/</loc>
+    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/latex/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/linux/</loc>
-    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <loc>/tags/linear-function/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -521,13 +527,19 @@
   </url>
   
   <url>
-    <loc>/tags/mooc/</loc>
-    <lastmod>2014-07-19T11:51:06+01:00</lastmod>
+    <loc>/tags/linux/</loc>
+    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/mooc/</loc>
+    <lastmod>2014-07-19T11:51:06+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mooc/</loc>
     <lastmod>2014-07-19T11:51:06+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -551,14 +563,14 @@
   </url>
   
   <url>
-    <loc>/tags/matlab/</loc>
-    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <loc>/categories/matlab/</loc>
+    <lastmod>2014-01-17T23:27:23+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/matlab/</loc>
-    <lastmod>2014-01-17T23:27:23+00:00</lastmod>
+    <loc>/tags/matlab/</loc>
+    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -593,13 +605,13 @@
   </url>
   
   <url>
-    <loc>/tags/probabilidades/</loc>
+    <loc>/categories/probabilidades/</loc>
     <lastmod>2012-10-02T00:00:56+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/probabilidades/</loc>
+    <loc>/tags/probabilidades/</loc>
     <lastmod>2012-10-02T00:00:56+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -617,14 +629,14 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2017-04-22T23:27:59+01:00</lastmod>
+    <loc>/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <loc>/tags/r/</loc>
+    <lastmod>2017-04-22T23:27:59+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -647,13 +659,13 @@
   </url>
   
   <url>
-    <loc>/tags/scientific-writing/</loc>
+    <loc>/categories/scientific-writing/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/scientific-writing/</loc>
+    <loc>/tags/scientific-writing/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -671,14 +683,14 @@
   </url>
   
   <url>
-    <loc>/tags/software-r/</loc>
-    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
+    <loc>/categories/software-r/</loc>
+    <lastmod>2012-02-13T11:31:36+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/software-r/</loc>
-    <lastmod>2012-02-13T11:31:36+00:00</lastmod>
+    <loc>/tags/software-r/</loc>
+    <lastmod>2015-06-17T20:21:43+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -689,13 +701,13 @@
   </url>
   
   <url>
-    <loc>/tags/thesis/</loc>
+    <loc>/categories/thesis/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/thesis/</loc>
+    <loc>/tags/thesis/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -719,14 +731,20 @@
   </url>
   
   <url>
+    <loc>/categories/universidad-nacional-de-ingenier%C3%ADa/</loc>
+    <lastmod>2014-09-18T01:31:17+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/universidad-nacional-de-ingenier%C3%ADa/</loc>
     <lastmod>2014-09-18T01:31:17+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/universidad-nacional-de-ingenier%C3%ADa/</loc>
-    <lastmod>2014-09-18T01:31:17+01:00</lastmod>
+    <loc>/tags/vector-spaces/</loc>
+    <lastmod>2018-04-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -93,15 +93,6 @@
     </item>
     
     <item>
-      <title>Development of Packages and Templates</title>
-      <link>/software/</link>
-      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Inference used in Machine Learning</title>
       <link>/inference/intermadiate/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
@@ -170,7 +161,17 @@
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/research/</guid>
-      <description> </description>
+      <description>My research is mainly focus on spatial and spatio-temporal modelling with application on epidemiology, public health and the environment. Some documents like thesis, papers and talks can be found in this page.
+ </description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/software/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/software/</guid>
+      <description>I mainly work with free programming languages like R, Python, C++, LaTex and Markdown. Below you will find projects I have been working on.</description>
     </item>
     
     <item>

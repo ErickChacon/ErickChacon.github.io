@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Change of basis on Erick Chacon</title>
+    <link>/tags/change-of-basis/</link>
+    <description>Recent content in Change of basis on Erick Chacon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/change-of-basis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linear Transformation and Change of Basis</title>
+      <link>/mathematics/linear-algebra/10-linear-transformation/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/mathematics/linear-algebra/10-linear-transformation/</guid>
+      <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
+Linear Transformation Letting \(V\) and \(W\) be vector spaces, a function \(f: V \rightarrow W\) is a linear transformation if the additivity and scalar multiplication properties are hold for any two vectors \({\mathbf{u}}, {\mathbf{v}} \in V\) and a constant \(c\): \[f({\mathbf{u}}+{\mathbf{v}}) = f({\mathbf{u}}) + f({\mathbf{v}})\] \[f(c{\mathbf{v}}) = cf({\mathbf{v}}).</description>
+    </item>
+    
+  </channel>
+</rss>
