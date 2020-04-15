@@ -1,57 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Erick Chacon</title>
+    <title>Categories on Erick Chacón</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Erick Chacon</description>
+    <description>Recent content in Categories on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
+    <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ciencia</title>
-      <link>/categories/ciencia/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      <title>Example</title>
+      <link>/categories/example/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ciencia/</guid>
+      <guid>/categories/example/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Coursera</title>
-      <link>/categories/coursera/</link>
-      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      <title>gamlss</title>
+      <link>/categories/gamlss/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/coursera/</guid>
+      <guid>/categories/gamlss/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data Analysis</title>
-      <link>/categories/data-analysis/</link>
-      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
+      <title>modelling</title>
+      <link>/categories/modelling/</link>
+      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/data-analysis/</guid>
+      <guid>/categories/modelling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Visualization</title>
       <link>/categories/data-visualization/</link>
-      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
       
       <guid>/categories/data-visualization/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data visualization</title>
-      <link>/categories/data-visualization/</link>
-      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      <title>one</title>
+      <link>/categories/one/</link>
+      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
       
-      <guid>/categories/data-visualization/</guid>
+      <guid>/categories/one/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/categories/hugo/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/categories/r/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/categories/software/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/software/</guid>
       <description></description>
     </item>
     
@@ -61,6 +89,24 @@
       <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
       
       <guid>/categories/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ciencia</title>
+      <link>/categories/ciencia/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/categories/ciencia/</guid>
       <description></description>
     </item>
     
@@ -83,60 +129,6 @@
     </item>
     
     <item>
-      <title>Estadística Descriptiva</title>
-      <link>/categories/estad%C3%ADstica-descriptiva/</link>
-      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
-      
-      <guid>/categories/estad%C3%ADstica-descriptiva/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Estadística Inferencial</title>
-      <link>/categories/estad%C3%ADstica-inferencial/</link>
-      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
-      
-      <guid>/categories/estad%C3%ADstica-inferencial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example</title>
-      <link>/categories/example/</link>
-      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gamlss</title>
-      <link>/categories/gamlss/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/gamlss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>/categories/hugo/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Informática</title>
-      <link>/categories/inform%C3%A1tica/</link>
-      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
-      
-      <guid>/categories/inform%C3%A1tica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>LaTeX</title>
       <link>/categories/latex/</link>
       <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
@@ -146,11 +138,47 @@
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>/categories/linux/</link>
-      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      <title>Scientific Writing</title>
+      <link>/categories/scientific-writing/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
       
-      <guid>/categories/linux/</guid>
+      <guid>/categories/scientific-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thesis</title>
+      <link>/categories/thesis/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/categories/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universidad Nacional de Ingeniería</title>
+      <link>/categories/universidad-nacional-de-ingenier%C3%ADa/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/categories/universidad-nacional-de-ingenier%C3%ADa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coursera</title>
+      <link>/categories/coursera/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/categories/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Informática</title>
+      <link>/categories/inform%C3%A1tica/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/categories/inform%C3%A1tica/</guid>
       <description></description>
     </item>
     
@@ -173,11 +201,11 @@
     </item>
     
     <item>
-      <title>Modelling</title>
-      <link>/categories/modelling/</link>
-      <pubDate>Sat, 07 Oct 2017 00:00:00 +0000</pubDate>
+      <title>Data Analysis</title>
+      <link>/categories/data-analysis/</link>
+      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
       
-      <guid>/categories/modelling/</guid>
+      <guid>/categories/data-analysis/</guid>
       <description></description>
     </item>
     
@@ -191,15 +219,6 @@
     </item>
     
     <item>
-      <title>One</title>
-      <link>/categories/one/</link>
-      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
-      
-      <guid>/categories/one/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Probabilidades</title>
       <link>/categories/probabilidades/</link>
       <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
@@ -209,29 +228,20 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Estadística Descriptiva</title>
+      <link>/categories/estad%C3%ADstica-descriptiva/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
       
-      <guid>/categories/r/</guid>
+      <guid>/categories/estad%C3%ADstica-descriptiva/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Scientific Writing</title>
-      <link>/categories/scientific-writing/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      <title>Estadística Inferencial</title>
+      <link>/categories/estad%C3%ADstica-inferencial/</link>
+      <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
       
-      <guid>/categories/scientific-writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software</title>
-      <link>/categories/software/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/software/</guid>
+      <guid>/categories/estad%C3%ADstica-inferencial/</guid>
       <description></description>
     </item>
     
@@ -241,24 +251,6 @@
       <pubDate>Mon, 13 Feb 2012 11:31:36 +0000</pubDate>
       
       <guid>/categories/software-r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thesis</title>
-      <link>/categories/thesis/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/categories/thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Universidad Nacional de Ingeniería</title>
-      <link>/categories/universidad-nacional-de-ingenier%C3%ADa/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/categories/universidad-nacional-de-ingenier%C3%ADa/</guid>
       <description></description>
     </item>
     

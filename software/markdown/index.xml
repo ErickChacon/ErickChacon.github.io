@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Markdown templates on Erick Chacon</title>
+    <title>Markdown templates on Erick Chacón</title>
     <link>/software/markdown/</link>
-    <description>Recent content in Markdown templates on Erick Chacon</description>
+    <description>Recent content in Markdown templates on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/software/markdown/index.xml" rel="self" type="application/rss+xml" />

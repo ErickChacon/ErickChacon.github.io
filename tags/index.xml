@@ -1,18 +1,108 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Erick Chacon</title>
+    <title>Tags on Erick Chacón</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Erick Chacon</description>
+    <description>Recent content in Tags on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 14 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <language>en-uk</language>
+    <lastBuildDate>Sun, 01 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blogdown</title>
+      <title>change of basis</title>
+      <link>/tags/change-of-basis/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/change-of-basis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linear function</title>
+      <link>/tags/linear-function/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/linear-function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vector spaces</title>
+      <link>/tags/vector-spaces/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vector-spaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>extreme events</title>
+      <link>/tags/extreme-events/</link>
+      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/extreme-events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>four</title>
+      <link>/tags/four/</link>
+      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
+      
+      <guid>/tags/four/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>three</title>
+      <link>/tags/three/</link>
+      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
+      
+      <guid>/tags/three/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>two</title>
+      <link>/tags/two/</link>
+      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
+      
+      <guid>/tags/two/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blogdown</title>
       <link>/tags/blogdown/</link>
       <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
@@ -21,11 +111,110 @@
     </item>
     
     <item>
-      <title>Change of basis</title>
-      <link>/tags/change-of-basis/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/tags/change-of-basis/</guid>
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MathJax</title>
+      <link>/tags/mathjax/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mathjax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandoc</title>
+      <link>/tags/pandoc/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pandoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RStudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plot</title>
+      <link>/tags/plot/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/tags/r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>/tags/latex/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>/tags/simulation/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Matlab</title>
+      <link>/tags/matlab/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/matlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software R</title>
+      <link>/tags/software-r/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/tags/software-r/</guid>
       <description></description>
     </item>
     
@@ -39,11 +228,56 @@
     </item>
     
     <item>
-      <title>Clustering</title>
-      <link>/tags/clustering/</link>
-      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
+      <title>Education</title>
+      <link>/tags/education/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
       
-      <guid>/tags/clustering/</guid>
+      <guid>/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scientific Writing</title>
+      <link>/tags/scientific-writing/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/scientific-writing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thesis</title>
+      <link>/tags/thesis/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Universidad Nacional de Ingeniería</title>
+      <link>/tags/universidad-nacional-de-ingenier%C3%ADa/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/tags/universidad-nacional-de-ingenier%C3%ADa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Informática</title>
+      <link>/tags/inform%C3%A1tica/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/tags/inform%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MOOC</title>
+      <link>/tags/mooc/</link>
+      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
+      
+      <guid>/tags/mooc/</guid>
       <description></description>
     </item>
     
@@ -57,11 +291,38 @@
     </item>
     
     <item>
-      <title>Deb Roy</title>
-      <link>/tags/deb-roy/</link>
-      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      <title>Eps image</title>
+      <link>/tags/eps-image/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
       
-      <guid>/tags/deb-roy/</guid>
+      <guid>/tags/eps-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mapa de lima</title>
+      <link>/tags/mapa-de-lima/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/mapa-de-lima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clustering</title>
+      <link>/tags/clustering/</link>
+      <pubDate>Fri, 08 Nov 2013 00:40:02 +0000</pubDate>
+      
+      <guid>/tags/clustering/</guid>
       <description></description>
     </item>
     
@@ -75,29 +336,11 @@
     </item>
     
     <item>
-      <title>Eduard Punset</title>
-      <link>/tags/eduard-punset/</link>
-      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
+      <title>Probabilidades</title>
+      <link>/tags/probabilidades/</link>
+      <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
       
-      <guid>/tags/eduard-punset/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Education</title>
-      <link>/tags/education/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/tags/education/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Eps image</title>
-      <link>/tags/eps-image/</link>
-      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
-      
-      <guid>/tags/eps-image/</guid>
+      <guid>/tags/probabilidades/</guid>
       <description></description>
     </item>
     
@@ -120,160 +363,7 @@
     </item>
     
     <item>
-      <title>Extreme events</title>
-      <link>/tags/extreme-events/</link>
-      <pubDate>Mon, 18 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/extreme-events/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Four</title>
-      <link>/tags/four/</link>
-      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
-      
-      <guid>/tags/four/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ggplot2</title>
-      <link>/tags/ggplot2/</link>
-      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
-      
-      <guid>/tags/ggplot2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Informática</title>
-      <link>/tags/inform%C3%A1tica/</link>
-      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
-      
-      <guid>/tags/inform%C3%A1tica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>LaTeX</title>
-      <link>/tags/latex/</link>
-      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
-      
-      <guid>/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Latex</title>
-      <link>/tags/latex/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linear function</title>
-      <link>/tags/linear-function/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/linear-function/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>/tags/linux/</link>
-      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
-      
-      <guid>/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MOOC</title>
-      <link>/tags/mooc/</link>
-      <pubDate>Sat, 19 Jul 2014 11:51:06 +0100</pubDate>
-      
-      <guid>/tags/mooc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mapa de lima</title>
-      <link>/tags/mapa-de-lima/</link>
-      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
-      
-      <guid>/tags/mapa-de-lima/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>/tags/markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MathJax</title>
-      <link>/tags/mathjax/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/mathjax/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Matlab</title>
-      <link>/tags/matlab/</link>
-      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
-      
-      <guid>/tags/matlab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pandoc</title>
-      <link>/tags/pandoc/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pandoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Probabilidades</title>
-      <link>/tags/probabilidades/</link>
-      <pubDate>Tue, 02 Oct 2012 00:00:56 +0100</pubDate>
-      
-      <guid>/tags/probabilidades/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>/tags/programming/</link>
-      <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
-      
-      <guid>/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Promedio</title>
+      <title>promedio</title>
       <link>/tags/promedio/</link>
       <pubDate>Sat, 07 Apr 2012 20:55:38 +0100</pubDate>
       
@@ -282,119 +372,20 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
+      <title>Deb Roy</title>
+      <link>/tags/deb-roy/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>/tags/deb-roy/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Eduard Punset</title>
+      <link>/tags/eduard-punset/</link>
+      <pubDate>Thu, 05 Apr 2012 18:05:43 +0100</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio</title>
-      <link>/tags/rstudio/</link>
-      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scientific Writing</title>
-      <link>/tags/scientific-writing/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/tags/scientific-writing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Simulation</title>
-      <link>/tags/simulation/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/simulation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Software R</title>
-      <link>/tags/software-r/</link>
-      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
-      
-      <guid>/tags/software-r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thesis</title>
-      <link>/tags/thesis/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/tags/thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Three</title>
-      <link>/tags/three/</link>
-      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
-      
-      <guid>/tags/three/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tidyverse</title>
-      <link>/tags/tidyverse/</link>
-      <pubDate>Sat, 22 Apr 2017 23:27:59 +0100</pubDate>
-      
-      <guid>/tags/tidyverse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Two</title>
-      <link>/tags/two/</link>
-      <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
-      
-      <guid>/tags/two/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Universidad Nacional de Ingeniería</title>
-      <link>/tags/universidad-nacional-de-ingenier%C3%ADa/</link>
-      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
-      
-      <guid>/tags/universidad-nacional-de-ingenier%C3%ADa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vector spaces</title>
-      <link>/tags/vector-spaces/</link>
-      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/vector-spaces/</guid>
+      <guid>/tags/eduard-punset/</guid>
       <description></description>
     </item>
     

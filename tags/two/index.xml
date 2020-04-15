@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Two on Erick Chacon</title>
+    <title>two on Erick Chacón</title>
     <link>/tags/two/</link>
-    <description>Recent content in Two on Erick Chacon</description>
+    <description>Recent content in two on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Mon, 20 Feb 2017 15:26:23 -0600</lastBuildDate>
     
 	<atom:link href="/tags/two/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <pubDate>Mon, 20 Feb 2017 15:26:23 -0600</pubDate>
       
       <guid>/</guid>
-      <description>This is my personal webpage and blog. I am a PhD student in Statistics and Epidemiology in the Faculty of Health and Medicine at Lancaster University supervised by Dr. Benjamin Taylor and Dr. Luke Parry. I work in the research group called CHICAS (Centre for Health, Informatics, Computing and Statistics).</description>
+      <description>I am a senior research associate in environmental data science at Lancaster University. I obtained my PhD degree in Statistics and Epidemiology at Lancaster University and later worked as a part-time lecturer in spatial statistics at Universidad Nacional de Ingeniera. My research focus at Data Science of the Natural Environment (DSNE) is to develop and use spatio-temporal methods to model environmental and health data.</description>
     </item>
     
   </channel>

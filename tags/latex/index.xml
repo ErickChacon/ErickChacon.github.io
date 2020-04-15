@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Latex on Erick Chacon</title>
+    <title>LaTeX on Erick Chacón</title>
     <link>/tags/latex/</link>
-    <description>Recent content in Latex on Erick Chacon</description>
+    <description>Recent content in LaTeX on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>LancsThesis LaTex Class</title>
-      <link>/software/latex/lancs-thesis/</link>
+      <title>Simple Integration Between Markdown and Latex</title>
+      <link>/software/markdown/simpledown/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>/software/latex/lancs-thesis/</guid>
-      <description>LancsThesis is a LaTex class that provides a template for thesis of the Lancaster University of Engineering (Lancaster - United Kingdom). It can be customized for other universities.</description>
+      <guid>/software/markdown/simpledown/</guid>
+      <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
     </item>
     
     <item>
@@ -39,21 +39,39 @@
     </item>
     
     <item>
-      <title>Simple Integration Between Markdown and Latex</title>
-      <link>/software/markdown/simpledown/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/markdown/simpledown/</guid>
-      <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
-    </item>
-    
-    <item>
       <title>Thesis Class for National University of Engineering</title>
       <link>/software/latex/uni-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/software/latex/uni-thesis/</guid>
       <description>UniThesis is a LaTex class that provides a template for thesis of the National University of Engineering (Lima - Peru).</description>
+    </item>
+    
+    <item>
+      <title>LancsThesis LaTex Class</title>
+      <link>/software/latex/lancs-thesis/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/lancs-thesis/</guid>
+      <description>LancsThesis is a LaTex class that provides a template for thesis of the Lancaster University of Engineering (Lancaster - United Kingdom). It can be customized for other universities.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade Debian Wheezy to Debian Jessie</title>
+      <link>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</link>
+      <pubDate>Wed, 17 Jun 2015 20:21:43 +0100</pubDate>
+      
+      <guid>/post/2015/06/17/upgrade-debian-wheezy-to-debian-jessie/</guid>
+      <description>In this last week, I updated my RStudio in Debian Wheezy and it turned out that it needed a more recent version of the package lib6. A reliable solution was to upgrade my system to Jessie, the current stable distribution of Debian.</description>
+    </item>
+    
+    <item>
+      <title>Thesis Template in Latex (UNI)</title>
+      <link>/post/2014/09/18/thesis-template-in-latex-uni/</link>
+      <pubDate>Thu, 18 Sep 2014 01:31:17 +0100</pubDate>
+      
+      <guid>/post/2014/09/18/thesis-template-in-latex-uni/</guid>
+      <description>Some months ago, I finished my undergraduate thesis and I modified the ClemsonThesis project made by Andrew R. Dalton in order to customize and create the UniThesis.cls class in LaTeX as a template for undergraduate tesis at Universidad Nacional de Ingeniería (UNI).</description>
     </item>
     
   </channel>

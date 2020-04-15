@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Erick Chacon</title>
+    <title>Home on Erick Chacón</title>
     <link>/</link>
-    <description>Recent content in Home on Erick Chacon</description>
+    <description>Recent content in Home on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Mon, 20 Feb 2017 15:26:23 -0600</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -285,7 +285,7 @@ summary(cars) ## speed dist ## Min.</description>
       <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
       
       <guid>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</guid>
-      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations. We usually add text in the image as the axis labels, titles or texts in certain positions.</description>
+      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations.</description>
     </item>
     
     <item>
@@ -303,8 +303,7 @@ summary(cars) ## speed dist ## Min.</description>
       <pubDate>Fri, 21 Jun 2013 14:15:52 +0100</pubDate>
       
       <guid>/post/2013/06/21/datos-sin-estad%C3%ADstica/</guid>
-      <description>
- “Los datos, sin estadística, no son más que ruido y confusión.”   “Data, without statistics, it is not more than noise and confusion.”  </description>
+      <description>  “Los datos, sin estadística, no son más que ruido y confusión.”   “Data, without statistics, it is not more than noise and confusion.”  </description>
     </item>
     
     <item>
@@ -404,7 +403,7 @@ En donde Deb Roy (Ingeniero Informático del MIT) explica como realizó un estud
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/wiki/</guid>
-      <description>Statistical Issues Index Introduction to Statistics  Probability Likelihood Confidence Intervals Statistical Methods Classic Statistics Bayesian statistics Comparing classic and Bayesian statistics Causality, Confounding  Statistical Inference  Classical Inference Techniques  Maximum likelihood estimation Expectation maximization Iteratively reweighted least squares Restricted maximum likelihood estimation  Bayesian Inference Techniques  Rejection sampling Importance sampling Markov chain Monte Carlo Gibbs sampling Metropolis Hasting Laplace Approximation Integrated nested Laplace approximation Variational Bayes   Modelling  Introduction to Modelling  Classical statistics Bayesian statistics Comparing classical and Bayesian statistics  Common Models  Linear Gaussian models Generalized linear models Mixed-effects models Additive models Quantile Regression  Spatio-temporal Models  Based-model geostatistics Low-rank models Nearest neighbor Gaussian process Dynamic models Dynamic linear models  More General Models  Location, scale and shape models Structured additive regression models   Computational Methods Mathematics  Linear Algebra  Linear Transformation and Change of Basis Eigenvalues   Programming Blog See which plugin has set the mapping gf.</description>
+      <description>Statistical Issues Index Introduction to Statistics  Probability Likelihood Confidence Intervals Statistical Methods Classic Statistics Bayesian statistics Comparing classic and Bayesian statistics Causality, Confounding  Statistical Inference  Classical Inference Techniques  Maximum likelihood estimation  Expectation maximization Iteratively reweighted least squares   Restricted maximum likelihood estimation   Bayesian Inference Techniques  Rejection sampling Importance sampling Markov chain Monte Carlo  Gibbs sampling [Metropolis Hasting](Metropolis Hasting)   Laplace Approximation Integrated nested Laplace approximation Variational Bayes    Modelling  Introduction to Modelling  Classical statistics Bayesian statistics Comparing classical and Bayesian statistics   Common Models  Linear Gaussian models Generalized linear models Mixed-effects models [Additive models](Additive models) Quantile Regression   Spatio-temporal Models  Based-model geostatistics  Low-rank models Nearest neighbor Gaussian process   Dynamic models  Dynamic linear models     More General Models  Location, scale and shape models Structured additive regression models    Computational Methods Mathematics  Linear Algebra  Linear Transformation and Change of Basis Eigenvalues    Programming Blog See which plugin has set the mapping gf.</description>
     </item>
     
     <item>

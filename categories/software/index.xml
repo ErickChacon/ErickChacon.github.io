@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Software on Erick Chacon</title>
+    <title>Software on Erick Chacón</title>
     <link>/categories/software/</link>
-    <description>Recent content in Software on Erick Chacon</description>
+    <description>Recent content in Software on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>LancsThesis LaTex Class</title>
-      <link>/software/latex/lancs-thesis/</link>
+      <title>Simple Integration Between Markdown and Latex</title>
+      <link>/software/markdown/simpledown/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>/software/latex/lancs-thesis/</guid>
-      <description>LancsThesis is a LaTex class that provides a template for thesis of the Lancaster University of Engineering (Lancaster - United Kingdom). It can be customized for other universities.</description>
+      <guid>/software/markdown/simpledown/</guid>
+      <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
     </item>
     
     <item>
@@ -39,21 +39,21 @@
     </item>
     
     <item>
-      <title>Simple Integration Between Markdown and Latex</title>
-      <link>/software/markdown/simpledown/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/software/markdown/simpledown/</guid>
-      <description>SimpleDown is pandoc template with less dependancies as possible for compatibility with LaTex clases.</description>
-    </item>
-    
-    <item>
       <title>Thesis Class for National University of Engineering</title>
       <link>/software/latex/uni-thesis/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>/software/latex/uni-thesis/</guid>
       <description>UniThesis is a LaTex class that provides a template for thesis of the National University of Engineering (Lima - Peru).</description>
+    </item>
+    
+    <item>
+      <title>LancsThesis LaTex Class</title>
+      <link>/software/latex/lancs-thesis/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/lancs-thesis/</guid>
+      <description>LancsThesis is a LaTex class that provides a template for thesis of the Lancaster University of Engineering (Lancaster - United Kingdom). It can be customized for other universities.</description>
     </item>
     
   </channel>

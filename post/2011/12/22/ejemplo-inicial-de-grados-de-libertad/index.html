@@ -1,7 +1,7 @@
 
 
 <!doctype html>
-<html lang="en-us">
+<html lang="en-uk">
 
 <head>
   
@@ -32,7 +32,7 @@
   });
 </script>
   
-  <title>Ejemplo inicial de grados de libertad - Erick Chacon</title>
+  <title>Ejemplo inicial de grados de libertad - Erick Chacón</title>
   <meta name="author" content="">
 </head>
 
@@ -43,7 +43,7 @@
       <div class="container">
         <a class="navbar-brand" href=" /">
           <i class='fa fa-bar-chart'></i>
-          Erick Chacon
+          Erick Chacón
         </a>
         <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
           <span class="navbar-toggler-icon"></span>
@@ -123,7 +123,6 @@ body {
 
   <div class="d-flex col-lg-8 offset-lg-2 w-100 justify-content-between">
     <p class="font-weight-light">
-      December 22, 2011
     </p>
     <small>
     <p class="font-weight-light">
@@ -134,7 +133,10 @@ body {
 
   <div class="row">
     <div class="col-lg-8 offset-lg-2 col-md-12 offset-md-0 text-justify">
-      <p style="text-align:justify;">
+      
+
+
+<p style="text-align:justify;">
 Para los estadísticos o ingenieros estadísticos el término de “grados de libertad” es muy conocido, incluso en la mayoría de los libros de estadística y probabilidad es muy utilizado pero no dejan un concepto claro sobre el mismo, siendo uno de los más conocidos “el número de variables menos el número de parámetros a estimar”. En forma práctica presento uno de los ejemplos primarios para entender este concepto: Asumiendo que  <span class="math inline">\(x_i\sim N(\mu,\sigma^2)\)</span>, sabemos que <span class="math inline">\(\overline{x}\sim N(\mu,\frac{\sigma^2}{n})\)</span>  y por lo tanto <span class="math inline">\(\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}} \sim N(0,1)\)</span> . Bajo el supuesto que conocemos los parámetros <span class="math inline">\(\mu\)</span> y $^2 $ se puede notar que el estadístico <span class="math inline">\(z=\frac{\overline{x}-\mu}{\frac{\sigma}{\sqrt{n}}}\)</span>  se obtienen a partir de <span class="math inline">\(n\)</span> variables independientes  <span class="math inline">\(x_i\)</span>. Es decir, como vimos en nuestro curso de algebra lineal, la dimensión de el espacio dimensional es <span class="math inline">\(n\)</span>. Por otro lado supongamos que desconocemos el valor de <span class="math inline">\(\sigma^2\)</span>, el cual sería estimado con <span class="math inline">\(s^2\)</span>, ahora para calcular el valor de <span class="math inline">\(s^2\)</span> se utilizan <span class="math inline">\(n\)</span> desviaciones respecto a la media y es fácil verificar que las <span class="math inline">\(n\)</span> desviaciones no son independientes sino, por lo contrario, la última desviación depende de las <span class="math inline">\(n-1\)</span> desviaciones restantes ya que la suma de las <span class="math inline">\(n\)</span> desviaciones tiene que ser igual a 0. Esto produce la pérdida de un grado de libertad y por lo tanto, nuestro estadístico <span class="math inline">\(t=\frac{\overline{x}-\mu}{\frac{s}{\sqrt{n}}}\)</span> tiene <span class="math inline">\(n-1\)</span> grados de libertad. En conclusión, cuando se calcula un estadístico con la necesidad de estimar <span class="math inline">\(k\)</span> parámetros, el número de grados de libertad es <span class="math inline">\(n-k\)</span>. En otras palabras mientras más obligaciones tengas en tu vida, tienes menos grados de libertad. “Y alguien que tiene demasiadas enamoradas casi no tiene grados de libertad porque no va a tener la libertad de movilizarse por donde desee sino que va a tener que evadir la concurrencia a ciertas zonas, para que no lo pillen, perdiendo poco a poco más grados de libertad.”  Espero que hayan disfrutado y se incentiven a interpretar su significado tanto en las pruebas de hipótesis multivariadas, regresión, muestreo y otros.
 </p>
 
@@ -150,7 +152,7 @@ Para los estadísticos o ingenieros estadísticos el término de “grados de li
   <div class="row">
   <div class="col-md-6">
     
-    <a href = "mailto:eral.th07@email.com" class="btn btn-social-icon btn-lg btn-envelope">
+    <a href = "mailto:e.chaconmontalvan@lancaster.ac.uk" class="btn btn-social-icon btn-lg btn-envelope">
       <i class="fa fa-envelope"></i></a>
     
     <a href = "https://github.com/ErickChacon" class="btn btn-social-icon btn-lg btn-github">

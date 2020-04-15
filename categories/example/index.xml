@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Example on Erick Chacon</title>
+    <title>Example on Erick Chacón</title>
     <link>/categories/example/</link>
-    <description>Recent content in Example on Erick Chacon</description>
+    <description>Recent content in Example on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/example/index.xml" rel="self" type="application/rss+xml" />
@@ -66,6 +66,24 @@
     </item>
     
     <item>
+      <title>Latex Class</title>
+      <link>/software/latex/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/software/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown templates</title>
+      <link>/software/markdown/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/software/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Quick</title>
       <link>/modelling/intro/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
@@ -102,15 +120,6 @@
     </item>
     
     <item>
-      <title>Latex Class</title>
-      <link>/software/latex/</link>
-      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/software/latex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Likelihood Function</title>
       <link>/inference/basics/a/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
@@ -125,15 +134,6 @@
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown templates</title>
-      <link>/software/markdown/</link>
-      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/software/markdown/</guid>
       <description></description>
     </item>
     
@@ -161,7 +161,7 @@
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/research/</guid>
-      <description>My research is mainly focus on spatial and spatio-temporal modelling with application on epidemiology, public health and the environment. Some documents like thesis, papers and talks can be found in this page.
+      <description> My research is mainly focus on spatial and spatio-temporal modelling with application on epidemiology, public health and the environment. Some documents like thesis, papers and talks can be found in this page.
  </description>
     </item>
     
@@ -180,7 +180,7 @@
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/statistics/</guid>
-      <description> Probability Likelihood Confidence Intervals Statistical Methods Classic Statistics Bayesian statistics Comparing classic and Bayesian statistics Causality, Confounding  </description>
+      <description>  Probability Likelihood Confidence Intervals Statistical Methods Classic Statistics Bayesian statistics Comparing classic and Bayesian statistics Causality, Confounding  </description>
     </item>
     
     <item>

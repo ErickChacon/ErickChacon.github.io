@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Informática on Erick Chacon</title>
+    <title>Informática on Erick Chacón</title>
     <link>/categories/inform%C3%A1tica/</link>
-    <description>Recent content in Informática on Erick Chacon</description>
+    <description>Recent content in Informática on Erick Chacón</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en-uk</language>
     <lastBuildDate>Sat, 19 Jul 2014 11:51:06 +0100</lastBuildDate>
     
 	<atom:link href="/categories/inform%C3%A1tica/index.xml" rel="self" type="application/rss+xml" />
@@ -26,7 +26,7 @@
       <pubDate>Fri, 17 Jan 2014 23:27:23 +0000</pubDate>
       
       <guid>/post/2014/01/17/print-eps-figure-with-accent-in-matlab/</guid>
-      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations. We usually add text in the image as the axis labels, titles or texts in certain positions.</description>
+      <description>Matlab is a powerfull software to plot images in different styles and formats. For this reason, researchers use it to make graphics to their papers. The eps format is one of the best to present it in papers or presentations.</description>
     </item>
     
     <item>
