@@ -17,8 +17,9 @@
       <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/mathematics/linear-algebra/10-linear-transformation/</guid>
-      <description>Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
-Linear Transformation Letting \(V\) and \(W\) be vector spaces, a function \(f: V \rightarrow W\) is a linear transformation if the additivity and scalar multiplication properties are hold for any two vectors \({\mathbf{u}}, {\mathbf{v}} \in V\) and a constant \(c\): \[f({\mathbf{u}}+{\mathbf{v}}) = f({\mathbf{u}}) + f({\mathbf{v}})\] \[f(c{\mathbf{v}}) = cf({\mathbf{v}}).</description>
+      <description>test
+Linear transformations and change of basis are widely used in statistics, for this reason I briefly describe the definition of these concepts and how they are related.
+Linear Transformation Letting \(V\) and \(W\) be vector spaces, a function \(f: V \rightarrow W\) is a linear transformation if the additivity and scalar multiplication properties are hold for any two vectors \(\mathbf{u}, \mathbf{v} \in V\) and a constant \(c\): \[f(\mathbf{u}+\mathbf{v}) = f(\mathbf{u}) + f(\mathbf{v})\] \[f(c\mathbf{v}) = cf(\mathbf{v}).</description>
     </item>
     
   </channel>

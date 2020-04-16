@@ -135,10 +135,15 @@ body {
 
 
 <!-- Random variables -->
+
 <!-- Matrices and vectors -->
+
 <!-- Matrices and vectors operators or functions -->
+
 <!-- Math functions -->
+
 <!-- Math groups -->
+
 <!-- % Statistics and Probability -->
 <!-- \usepackage{xifthen} -->
 <!-- \newcommand{\mean}[2][]{\mathds{E}\ifthenelse{\isempty{#1}}{}{_{#1}}\left[#2\right]} -->
@@ -149,29 +154,69 @@ body {
 <!-- \newcommand{\meanhat}[1]{\hat{\mathds{E}}\left[#1\right]} -->
 <!-- % \newcommand{\cond}{\mid} -->
 <!-- % Density Functions -->
+
 <!-- % \newcommand{\ind}[1]{I{\left(#1\right)}} -->
 <!-- % Link functions -->
+
 <!-- % Text decorations -->
-<p><em>Eigenvalues</em> and <em>eigenvectors</em> are used in several concepts of statistical inference and modelling. It can be useful for dimension reduction, decomposition of variance-covariance matrices, so on. For this reason, we provide basic details about eigenvectors and eigenvalues and their close relationship with linear transformations.</p>
+
+<p><em>Eigenvalues</em> and <em>eigenvectors</em> are used in several concepts of statistical inference
+and modelling. It can be useful for dimension reduction, decomposition of
+variance-covariance matrices, so on. For this reason, we provide basic details about
+eigenvectors and eigenvalues and their close relationship with linear
+transformations.</p>
 <div id="definition" class="section level4">
 <h4>Definition</h4>
-<p>The eigenvector of a linear transformation <span class="math inline">\({\mathbf{A}}_{n\times n}\)</span> is a non-zero vector <span class="math inline">\({\mathbf{v}}\)</span> such as the linear transformation of this vector is proportional to itself: <span class="math display">\[{\mathbf{A}}{\mathbf{v}} = \lambda {\mathbf{v}} \iff ({\mathbf{A}}-\lambda{\mathbf{I}}){\mathbf{v}} = {\mathbf{0}},\]</span> where <span class="math inline">\(\lambda\)</span> is the eigenvalue associated to the eigenvector <span class="math inline">\({\mathbf{v}}\)</span>. The equation above has non-zero solution if and only if <span class="math display">\[\det({\mathbf{A}}-\lambda{\mathbf{I}}) = 0.\]</span> Then, all the eigenvalues <span class="math inline">\(\lambda\)</span> of <span class="math inline">\({\mathbf{A}}\)</span> hold the condition above.</p>
-<p>There is an equivalence between the linear transformation <span class="math inline">\(f({\mathbf{x}}) = {\mathbf{A}}{\mathbf{x}}\)</span>, and the eigenvalues <span class="math inline">\(\lambda_1, \lambda_2, \dots, \lambda_n\)</span> and eigenvectors <span class="math inline">\({\mathbf{v}}_1, {\mathbf{v}}_2, \dots, {\mathbf{v}}_n\)</span> of itself. This relationship provide more useful interpretation of the eigenvalues and eigenvectors, we will use the <a href="/mathematics/linear-algebra/10-linear-transformation">change of basis</a> concept to describe it.</p>
+<p>The eigenvector of a linear transformation <span class="math inline">\(\mathbf{A}_{n\times n}\)</span> is a non-zero vector
+<span class="math inline">\(\mathbf{v}\)</span>
+such as the linear transformation of this vector is proportional to itself:
+<span class="math display">\[\mathbf{A}\mathbf{v} = \lambda \mathbf{v} \iff (\mathbf{A}-\lambda\mathbf{I})\mathbf{v} = \mathbf{0},\]</span>
+where <span class="math inline">\(\lambda\)</span> is the eigenvalue associated to the eigenvector <span class="math inline">\(\mathbf{v}\)</span>. The
+equation above has non-zero solution if and only if
+<span class="math display">\[\det(\mathbf{A}-\lambda\mathbf{I}) = 0.\]</span>
+Then, all the eigenvalues <span class="math inline">\(\lambda\)</span> of <span class="math inline">\(\mathbf{A}\)</span> hold the condition above.</p>
+<p>There is an equivalence between the linear transformation <span class="math inline">\(f(\mathbf{x}) = \mathbf{A}\mathbf{x}\)</span>,
+and the eigenvalues <span class="math inline">\(\lambda_1, \lambda_2, \dots, \lambda_n\)</span> and eigenvectors
+<span class="math inline">\(\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_n\)</span> of itself. This relationship provide more
+useful
+interpretation of the eigenvalues and eigenvectors, we will use the
+<a href="../../mathematics/linear-algebra/10-linear-transformation">change of basis</a>
+concept to describe it.</p>
 </div>
 <div id="eigendecomposition-and-geometric-interpretation" class="section level4">
 <h4>Eigendecomposition and geometric interpretation</h4>
-<p>Considering a vector space <span class="math inline">\(V\)</span> with basis <span class="math inline">\(\{{\mathbf{v}}_1, {\mathbf{v}}_2, \dots, {\mathbf{v}}_n\}\)</span>, any vector <span class="math inline">\({\mathbf{x}} \in {\mathbb{R}}^n\)</span> can be represented as <span class="math inline">\({\mathbf{V}}{\mathbf{x}}_v\)</span>, where <span class="math inline">\({\mathbf{x}}_v\)</span> is the representation of <span class="math inline">\({\mathbf{x}}\)</span> using the matrix of basis <span class="math inline">\({\mathbf{V}}=({\mathbf{v}}_1, \dots, {\mathbf{v}}_n)\)</span> of the vector space <span class="math inline">\(V\)</span>. Then, the linear transformation can be expressed as <span class="math display">\[f({\mathbf{x}}) = {\mathbf{A}}{\mathbf{x}} = {\mathbf{A}}{\mathbf{V}}{\mathbf{x}}_v = {\mathbf{V}}{\mathbf{D}}{\mathbf{x}}_v,\]</span> where the diagonal matrix <span class="math inline">\(D={\text{diag}(\lambda_1, \dots, \lambda_n)}\)</span> and the last equivalence hold because <span class="math inline">\({\mathbf{A}}{\mathbf{v}}_i={\mathbf{v}}_i\lambda_i\)</span>. Finally, expressing <span class="math inline">\({\mathbf{x}}_v\)</span> in terms of the vector <span class="math inline">\({\mathbf{x}}\)</span> defined on the standard basis, we obtain that <span class="math display">\[f({\mathbf{x}}) = {\mathbf{V}}{\mathbf{D}}{\mathbf{V}}^{-1}{\mathbf{x}},\]</span> the equality <span class="math inline">\({\mathbf{A}}={\mathbf{V}}{\mathbf{D}}{\mathbf{V}}^{-1}\)</span> is called <em>eigendecomposition</em>. Hence, the linear transformation is equivalent to the following: change the basis of <span class="math inline">\({\mathbf{x}}\)</span> to the vector space <span class="math inline">\(V\)</span> , apply the diagonal linear transformation <span class="math inline">\(D\)</span> and return to the space with standard basis. Geometrically, you can think of <span class="math inline">\(\{{\mathbf{v}}_1, {\mathbf{v}}_2, \dots, {\mathbf{v}}_n\}\)</span> as the basis of vectorial space <span class="math inline">\(V\)</span> where the transformation <span class="math inline">\({\mathbf{A}}\)</span> becomes only an scaling transformation <span class="math inline">\({\mathbf{D}}\)</span> and the eigenvalues <span class="math inline">\(\lambda_1, \lambda_2, \dots, \lambda_n\)</span> are the scaling factor in direction of the corresponding eigenvector <span class="math inline">\({\mathbf{v}}_1, {\mathbf{v}}_2, \dots, {\mathbf{v}}_n\)</span>.</p>
+<p>Considering a vector space <span class="math inline">\(V\)</span> with basis <span class="math inline">\(\{\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_n\}\)</span>,
+any vector <span class="math inline">\(\mathbf{x} \in \mathbb{R}^n\)</span> can be represented as <span class="math inline">\(\mathbf{V}\mathbf{x}_v\)</span>,
+where <span class="math inline">\(\mathbf{x}_v\)</span> is the representation of <span class="math inline">\(\mathbf{x}\)</span> using the matrix of basis
+<span class="math inline">\(\mathbf{V}=(\mathbf{v}_1, \dots, \mathbf{v}_n)\)</span> of the vector space <span class="math inline">\(V\)</span>. Then, the linear
+transformation can be expressed as
+<span class="math display">\[f(\mathbf{x}) = \mathbf{A}\mathbf{x} = \mathbf{A}\mathbf{V}\mathbf{x}_v = \mathbf{V}\mathbf{D}\mathbf{x}_v,\]</span>
+where the diagonal matrix <span class="math inline">\(D=\text{diag}(\lambda_1, \dots, \lambda_n)\)</span> and the last
+equivalence hold because <span class="math inline">\(\mathbf{A}\mathbf{v}_i=\mathbf{v}_i\lambda_i\)</span>. Finally, expressing
+<span class="math inline">\(\mathbf{x}_v\)</span> in terms of the vector <span class="math inline">\(\mathbf{x}\)</span> defined on the standard basis, we
+obtain that
+<span class="math display">\[f(\mathbf{x}) = \mathbf{V}\mathbf{D}\mathbf{V}^{-1}\mathbf{x},\]</span>
+the equality <span class="math inline">\(\mathbf{A}=\mathbf{V}\mathbf{D}\mathbf{V}^{-1}\)</span> is called <em>eigendecomposition</em>.
+Hence, the linear transformation is equivalent to the following:
+change the basis of <span class="math inline">\(\mathbf{x}\)</span> to the vector space <span class="math inline">\(V\)</span>
+, apply the diagonal linear transformation <span class="math inline">\(D\)</span> and return to the space with
+standard basis. Geometrically, you can think of
+<span class="math inline">\(\{\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_n\}\)</span> as the basis of vectorial space <span class="math inline">\(V\)</span> where
+the transformation <span class="math inline">\(\mathbf{A}\)</span> becomes only an scaling transformation <span class="math inline">\(\mathbf{D}\)</span> and the
+eigenvalues <span class="math inline">\(\lambda_1, \lambda_2, \dots, \lambda_n\)</span> are the scaling factor in
+direction of the corresponding eigenvector <span class="math inline">\(\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_n\)</span>.</p>
 </div>
 <div id="basis-properties" class="section level4">
 <h4>Basis properties</h4>
 <p>There are certain properties the are useful for statistical modelling such as:</p>
 <ul>
-<li>Trace of <span class="math inline">\({\mathbf{A}}\)</span> is equals to the sum of the eigenvalues.</li>
-<li>Determinant of <span class="math inline">\({\mathbf{A}}\)</span> is equals to the sum of the eigenvalues.</li>
-<li>If <span class="math inline">\({\mathbf{A}}\)</span> is symmetric, then all eigenvalues are real.</li>
-<li>If <span class="math inline">\({\mathbf{A}}\)</span> is positive definite, then all eigenvalues are positive.</li>
+<li>Trace of <span class="math inline">\(\mathbf{A}\)</span> is equals to the sum of the eigenvalues.</li>
+<li>Determinant of <span class="math inline">\(\mathbf{A}\)</span> is equals to the sum of the eigenvalues.</li>
+<li>If <span class="math inline">\(\mathbf{A}\)</span> is symmetric, then all eigenvalues are real.</li>
+<li>If <span class="math inline">\(\mathbf{A}\)</span> is positive definite, then all eigenvalues are positive.</li>
 </ul>
-<p>Note that, some of these properties can be explained using the <em>eigendecomposition</em> <span class="math inline">\({\mathbf{A}} = {\mathbf{V}}{\mathbf{D}}{\mathbf{V}}^{-1}\)</span>.</p>
+<p>Note that, some of these properties can be explained using the <em>eigendecomposition</em>
+<span class="math inline">\(\mathbf{A} = \mathbf{V}\mathbf{D}\mathbf{V}^{-1}\)</span>.</p>
 </div>
 
     </div>
